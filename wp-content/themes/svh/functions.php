@@ -47,32 +47,31 @@ require_once( 'library/custom-header.php' );
 
 //Custom post types
 
-function my_custom_post_homepage() {
+function my_custom_post_teaser() {
 	$labels = array(
-		'name'               => _x( 'Homepage', 'post type general name' ),
-		'singular_name'      => _x( 'Homepage', 'post type singular name' ),
-		'add_new'            => _x( 'Add New', 'book' ),
-		'add_new_item'       => __( 'Add New Product' ),
-		'edit_item'          => __( 'Edit hompage' ),
-		'new_item'           => __( 'New Hompage' ),
-		'all_items'          => __( 'Homepage' ),
-		'view_item'          => __( 'View Homepage' ),
-		'search_items'       => __( 'Search Homepage' ),
-		'not_found'          => __( 'No homepage found' ),
-		'not_found_in_trash' => __( 'No homepage found in the Trash' ),
+		'name'               => _x( 'Teaser', 'post type general name' ),
+		'singular_name'      => _x( 'Teaser', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new teaser block' ),
+		'edit_item'          => __( 'Edit teaser' ),
+		'new_item'           => __( 'New teaser' ),
+		'all_items'          => __( 'All teasers' ),
+		'view_item'          => __( 'View teaser' ),
+		'search_items'       => __( 'Search teaser' ),
+		'not_found'          => __( 'No teaser found' ),
+		'not_found_in_trash' => __( 'No teaser found in the Trash' ),
 		'parent_item_colon'  => '',
-		'menu_name'          => 'Homepage'
+		'menu_name'          => 'Teaser'
 	);
 	$args = array(
 		'labels'        => $labels,
-		'description'   => 'The specific content type for a homepage',
+		'description'   => 'The specific content type for a teaser',
 		'public'        => true,
 		'menu_position' => 5,
 		'supports'      => array( 'title', 'thumbnail' ),
 		'has_archive'   => true,
 	);
-	register_post_type( 'homepage', $args );
+	register_post_type( 'teaser', $args );
 }
-add_action( 'init', 'my_custom_post_homepage' );
+add_action( 'init', 'my_custom_post_teaser' );
 
 ?>
