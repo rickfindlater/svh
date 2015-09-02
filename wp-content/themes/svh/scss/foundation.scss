@@ -69,5 +69,9 @@
 @import "site/topbar";
 @import "site/hero";
 @import "site/footer";
-/* svh stylessheet */
-@import "site/svh";
+
+//-- Custom components --//
+@import "components/buttons";
+
+// -- Styles for SVH specific layouts -- //
+@import "layout/teasers";

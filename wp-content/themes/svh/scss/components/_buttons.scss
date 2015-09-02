@@ -1,0 +1,10 @@
+/// --- Our very own button styles --- ///
+
+.button {
+	text-transform: uppercase;
+
+	&.extra-side-padding {
+		padding-left: rem-calc(48);
+		padding-right: rem-calc(48);
+	}
+}

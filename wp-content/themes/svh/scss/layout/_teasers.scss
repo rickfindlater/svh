@@ -1,0 +1,11 @@
+/// -- The teaser blocks -- ///
+
+.teaser-block {
+	background-color: lime;
+	text-align: center;
+
+	img {
+
+		//@include border-radius ($global-rounded);
+	}
+}
