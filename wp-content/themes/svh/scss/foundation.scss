@@ -2,6 +2,7 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import "normalize";
+//@import "compass/css3/border-radius"
 
 /*
   ZURB Foundation components:
@@ -51,13 +52,9 @@
 @import "../bower_components/foundation/scss/foundation/components/offcanvas";
 @import "../bower_components/foundation/scss/foundation/components/visibility";
 
-/*
-  Font Awesome - (http://fontawesome.io/) :
-  Feel free to remove the import statement below if you don't plan to use icon-fonts in your project
-*/
 
-@import "../assets/fontawesome/scss/font-awesome.scss";
-
+//@import "../assets/fontawesome/scss/font-awesome.scss";
+@import "../assets/black-tie/Light/scss/black-tie.scss";
 
 /*
   My custom styles:

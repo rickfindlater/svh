@@ -18,7 +18,7 @@ get_header(); ?>
 				while( $teasers->have_posts() ) {
 					$teasers->the_post();
 					?>
-					<div class="large-3 columns teaser-block">
+					<div class="medium-4 columns teaser-block">
 						<a href="#" class="h3"><?php the_title() ?></a>
 						<img src="<?php the_field('teaser_image'); ?>" alt="Teaser image">
 						<p><?php the_field('teaser_summary'); ?></p>
