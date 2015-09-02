@@ -44,9 +44,12 @@ $success-color: 				#43AC6A;
 $warning-color: 				#f08a24;
 $info-color: 					#a0d3e8;
 
+$secondary-color-light-accent:  lighten($secondary-color,10%);
+$secondary-color-lighter-accent:lighten($secondary-color,20%);
+
 // We use these to control various global styles
 $body-bg: $white;
-$body-font-color: 				$jet;
+$body-font-color: 				$tuatara;
 $body-font-family: 				$font-family-sans-serif;
 $body-font-weight: 				$font-weight-normal;
 $body-font-style: 				normal;
@@ -55,20 +58,29 @@ $header-text-rendering:			optimizeLegibility;
 $topbar-link-weight: 			bold;
 
 // Media query breakpoints
-$small-breakpoint:  em-calc(640);
-$medium-breakpoint: em-calc(1024);
-$topbar-breakpoint: em-calc(820);
-$large-breakpoint:  em-calc(1440);
-$xlarge-breakpoint: em-calc(1920);
+$small-breakpoint:  			em-calc(640);
+$medium-breakpoint: 			em-calc(1024);
+$topbar-breakpoint: 			em-calc(820);
+$large-breakpoint:  			em-calc(1440);
+$xlarge-breakpoint: 			em-calc(1920);
 
 
+// Grid overrides
+
+$row-width:                     rem-calc(1100) !default;
+$row-standard-padding:          50px;
 
 // Basic style rules 
 
-$global-radius: 6px;
-
+$global-radius: 				6px;
 
 
 // Buttons
 
-$button-font-weight: $font-weight-ultra-bold;
+$button-font-weight: 			$font-weight-ultra-bold;
+$button-border-width: 			1px;
+
+
+// Teaser block
+
+$teaser-image-dimensions:		180px;

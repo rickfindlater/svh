@@ -2,8 +2,17 @@
 
 .teaser-block {
 	text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
 	img {
+        margin-bottom: $header-bottom-margin;
+        width: $teaser-image-dimensions;
+        border: 1px solid $secondary-color-light-accent;
 		@include border-radius ($global-rounded);
 	}
+
+    .button {
+        margin-bottom: 0;
+    }
 }

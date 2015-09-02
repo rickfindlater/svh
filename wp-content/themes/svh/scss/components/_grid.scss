@@ -1,0 +1,14 @@
+/// --- Grid and positioning stuff --- ///
+
+.row {
+
+    &.row-standard-padding {
+        padding-bottom: $row-standard-padding;
+        padding-top: $row-standard-padding;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            padding-bottom: $row-standard-padding / 2;
+            padding-top: $row-standard-padding / 2;
+        }
+    }
+}
