@@ -10,6 +10,7 @@ $font-family-monospace: 		Consolas, "Liberation Mono", Courier, monospace;
 $font-family-icon-font:			"Black Tie";
 
 // We use these to define default font weights
+$font-weight-light: 			200 !default;
 $font-weight-normal: 			normal !default;
 $font-weight-bold: 				bold !default;
 $font-weight-ultra-bold: 		900 !default;
@@ -47,9 +48,14 @@ $info-color: 					#a0d3e8;
 $secondary-color-light-accent:  lighten($secondary-color,10%);
 $secondary-color-lighter-accent:lighten($secondary-color,20%);
 
+// Anchors ///
+
+$anchor-font-color:             $primary-color;
+
+
 // We use these to control various global styles
 $body-bg: $white;
-$body-font-color: 				$tuatara;
+$body-font-color: 				$charcoal;
 $body-font-family: 				$font-family-sans-serif;
 $body-font-weight: 				$font-weight-normal;
 $body-font-style: 				normal;
@@ -68,17 +74,30 @@ $xlarge-breakpoint: 			em-calc(1920);
 // Grid overrides
 
 $row-width:                     rem-calc(1100) !default;
-$row-standard-padding:          50px;
+$row-standard-padding:          50px !default;
 
 // Basic style rules 
 
-$global-radius: 				6px;
+$global-radius: 				6px!default;
 
 
 // Buttons
 
-$button-font-weight: 			$font-weight-ultra-bold;
-$button-border-width: 			1px;
+$button-font-weight: 			$font-weight-ultra-bold !default;
+$button-border-width: 			1px !default;
+
+
+// Top bar (the Nav)
+
+$topbar-height:                 rem-calc(80) !default;
+$topbar-bg-color:               $white !default;
+$topbar-link-bg-hover:          $secondary-color-lighter-accent !default;
+$topbar-logo-width:             140px !default;
+$topbar-logo-height:            48px !default;
+$topbar-link-color:             $anchor-font-color !default;
+$topbar-link-color-hover:       $anchor-font-color !default;
+$topbar-link-font-size:         rem-calc(15) !default;
+$topbar-link-weight:            $font-weight-light !default;
 
 
 // Teaser block

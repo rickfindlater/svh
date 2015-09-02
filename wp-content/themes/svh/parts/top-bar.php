@@ -8,11 +8,16 @@
  */
 
 ?>
-<div class="top-bar-container contain-to-grid show-for-medium-up">
+<div class="top-bar-container show-for-medium-up">
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
-            <li class="name">
-                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+            <li class="name show-for-sr">
+                <h1><?php bloginfo( 'name' ); ?></h1>
+            </li>
+            <li class="top-bar-logo">
+                <a href="<?php echo home_url(); ?>">
+                    <img src="http://localhost/~jamesfindlater/svh/wp-content/themes/svh/assets/img/svh_main_logo02092015.png" alt="SVH Logo">
+                </a>
             </li>
         </ul>
         <section class="top-bar-section">
