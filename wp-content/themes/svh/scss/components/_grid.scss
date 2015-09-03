@@ -11,4 +11,14 @@
             padding-top: $row-standard-padding / 2;
         }
     }
+
+    &.row-double-padding {
+        padding-bottom: $row-standard-padding * 2;
+        padding-top: $row-standard-padding * 2;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            padding-bottom: $row-standard-padding;
+            padding-top: $row-standard-padding;
+        }
+    }
 }

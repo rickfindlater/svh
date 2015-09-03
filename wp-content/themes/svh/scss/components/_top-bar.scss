@@ -4,4 +4,9 @@
 .top-bar-logo {
     width: $topbar-logo-width;
     height: $topbar-logo-height;
+    margin: $top-bar-logo-margin;
+}
+
+.top-bar-section ul li>a {
+    font-weight: $font-weight-normal;
 }

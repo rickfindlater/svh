@@ -5,6 +5,7 @@ Description: Only used for the site homepage
 */
 get_header(); ?>
 
+
 <div class="row row-standard-padding" role="main">
 
 	<!-- Start teaser blocks -->
@@ -38,6 +39,16 @@ get_header(); ?>
 	<p><?php the_field( 'quote_content', 67 );	?></p>
 	<p><?php the_field( 'quote_name', 67 );	?></p>
 
+</div>
+
+<div class="full-width-image-block">
+    <img src="http://localhost/~jamesfindlater/svh/wp-content/themes/svh/assets/img/svh_about_home.jpg" alt="The team">
+    <div class="row row-standard-padding">
+    	<div class="large-6 columns">
+    		<h2>Sed ut perspi ciatis unde omnis</h2>
+			<p class="lead">Omnis iste natus error sit voluptatem accusantium doloremque laudantium iste natus error sit voluptatem.</p>
+    	</div>
+    </div>
 </div>
 
 <?php get_footer(); ?>
