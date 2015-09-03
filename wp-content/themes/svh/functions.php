@@ -47,6 +47,8 @@ require_once( 'library/custom-header.php' );
 
 //Custom post types
 
+//**** teaser ****
+
 function my_custom_post_teaser() {
 	$labels = array(
 		'name'               => _x( 'Teaser', 'post type general name' ),
@@ -73,5 +75,63 @@ function my_custom_post_teaser() {
 	register_post_type( 'teaser', $args );
 }
 add_action( 'init', 'my_custom_post_teaser' );
+
+//**** single quote ****
+
+function my_custom_post_single_quote() {
+	$labels = array(
+		'name'               => _x( 'Single quote', 'post type general name' ),
+		'singular_name'      => _x( 'Single quote', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Single quote block' ),
+		'edit_item'          => __( 'Edit Single quote' ),
+		'new_item'           => __( 'New Single quote' ),
+		'all_items'          => __( 'All Single quotes' ),
+		'view_item'          => __( 'View Single quote' ),
+		'search_items'       => __( 'Search Single quote' ),
+		'not_found'          => __( 'No Single quote found' ),
+		'not_found_in_trash' => __( 'No Single quote found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Single quote'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Single quote',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'single_quote', $args );
+}
+add_action( 'init', 'my_custom_post_single_quote' );
+
+//**** Full width image block ****
+
+function my_custom_post_fw_imgblk() {
+	$labels = array(
+		'name'               => _x( 'Full width image block', 'post type general name' ),
+		'singular_name'      => _x( 'Full width image block', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Full width image block block' ),
+		'edit_item'          => __( 'Edit Full width image block' ),
+		'new_item'           => __( 'New Full width image block' ),
+		'all_items'          => __( 'All Full width image blocks' ),
+		'view_item'          => __( 'View Full width image block' ),
+		'search_items'       => __( 'Search Full width image block' ),
+		'not_found'          => __( 'No Full width image block found' ),
+		'not_found_in_trash' => __( 'No Full width image block found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Full width image block'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Full width image block',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'fw_imgblk', $args );
+}
+add_action( 'init', 'my_custom_post_fw_imgblk' );
 
 ?>
