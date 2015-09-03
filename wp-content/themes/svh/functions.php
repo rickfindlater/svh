@@ -105,4 +105,33 @@ function my_custom_post_single_quote() {
 }
 add_action( 'init', 'my_custom_post_single_quote' );
 
+//**** Full width image block ****
+
+function my_custom_post_fw_imgblk() {
+	$labels = array(
+		'name'               => _x( 'Full width image block', 'post type general name' ),
+		'singular_name'      => _x( 'Full width image block', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Full width image block block' ),
+		'edit_item'          => __( 'Edit Full width image block' ),
+		'new_item'           => __( 'New Full width image block' ),
+		'all_items'          => __( 'All Full width image blocks' ),
+		'view_item'          => __( 'View Full width image block' ),
+		'search_items'       => __( 'Search Full width image block' ),
+		'not_found'          => __( 'No Full width image block found' ),
+		'not_found_in_trash' => __( 'No Full width image block found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Full width image block'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Full width image block',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'fw_imgblk', $args );
+}
+add_action( 'init', 'my_custom_post_fw_imgblk' );
+
 ?>

@@ -5,7 +5,6 @@ Description: Only used for the site homepage
 */
 get_header(); ?>
 
-
 <div class="row row-standard-padding" role="main">
 
 	<!-- Start teaser blocks -->
@@ -35,12 +34,14 @@ get_header(); ?>
 	<!-- end teaser blocks -->
 </div>
 
+<!-- Start single quote block -->
 <div class="full-width-image-block">
-    <img src="http://localhost/~jamesfindlater/svh/wp-content/themes/svh/assets/img/svh_about_home.jpg" alt="The team">
+    <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
     <div class="row row-standard-padding">
     	<div class="large-6 columns">
-    		<h2>Sed ut perspi ciatis unde omnis</h2>
-			<p class="lead">Omnis iste natus error sit voluptatem accusantium doloremque laudantium iste natus error sit voluptatem.</p>
+    		<h2><?php the_field( 'header', 70 ); ?></h2>
+			<p class="lead"><?php the_field( 'description', 70 ); ?></p>
+		    <a href="<?php the_field( 'link', 70 ); ?>">Find out about us</a>
     	</div>
     </div>
 </div>
