@@ -14,6 +14,39 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        max-width: 100%;
+
+        @media screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint) {
+            max-width: 120%;
+        }
+
+        @media screen and (max-width: $medium-breakpoint) {
+            max-width: 160%;
+            left: 50%;
+            @include transform(translate(-50%, 0));
+        }
+
+        @media screen and (max-width: $small-breakpoint) {
+            max-width: 280%;
+            top: -10px;
+            @include filter(blur,6px);
+        }
+    }
+
+    .button {
+        margin: 20px 0 0;
+    }
+
+    .row {
+        padding-top: ($row-standard-padding * 4);
+        padding-bottom: $row-standard-padding;
+
+        @media screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint) {
+            padding-top: ($row-standard-padding * 3);
+        }
+
+        @media screen and (max-width: $medium-breakpoint) {
+            padding-top: $row-standard-padding;
+        }
     }
 }

@@ -3,14 +3,35 @@
 .button {
 	text-transform: uppercase;
 
+	&:hover, &:active, &:focus {
+		border-color: $button-bg-hover;
+	}
+
+	//Gives a nice bit extra side padding for big important buttons
 	&.extra-side-padding {
 		padding-left: rem-calc(48);
 		padding-right: rem-calc(48);
+
+		&.large {
+			padding-left: rem-calc(60);
+			padding-right: rem-calc(60);
+		}
 	}
 
 	&.outline {
 		background-color: transparent;
 		color: $primary-color;
 		border-color:$secondary-color-light-accent;
+	}
+
+	//Button that has a slightly opaque background to go above images
+	&.button-opacity {
+		background-color: rgba($button-bg-color,$button-standard-opacity);
+		border-color: rgba($button-bg-color,$button-standard-opacity);
+
+		&:hover, &:active, &:focus {
+			background-color: $button-bg-hover;
+			border-color: $button-bg-hover;
+		}
 	}
 }

@@ -39,10 +39,11 @@ get_header(); ?>
 
 <div class="full-width-image-block">
     <img src="http://localhost/~jamesfindlater/svh/wp-content/themes/svh/assets/img/svh_about_home.jpg" alt="The team">
-    <div class="row row-standard-padding">
-    	<div class="large-6 columns">
+    <div class="row">
+    	<div class="large-8 large-centered columns">
     		<h2>Sed ut perspi ciatis unde omnis</h2>
 			<p class="lead">Omnis iste natus error sit voluptatem accusantium doloremque laudantium iste natus error sit voluptatem.</p>
+			<a href="#" class="button large primary radius extra-side-padding button-opacity">Find out more</a>
     	</div>
     </div>
 </div>

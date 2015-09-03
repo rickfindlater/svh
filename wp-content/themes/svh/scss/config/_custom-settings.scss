@@ -80,16 +80,27 @@ $row-standard-padding:          50px !default;
 
 $global-radius: 				6px!default;
 
+// Headings, type etc
+$h1-font-size: rem-calc(50) !default;
+$h2-font-size: rem-calc(43) !default;
+$h3-font-size: rem-calc(33) !default;
+$h4-font-size: rem-calc(29) !default;
+$h5-font-size: rem-calc(24) !default;
+$h6-font-size: 1rem !default;
+
+$header-line-height: 1.1 !default;
+
 
 // Buttons
 
 $button-font-weight: 			$font-weight-ultra-bold !default;
 $button-border-width: 			1px !default;
-
+$button-bg-color:               saturate(lighten($primary-color,15%),10%) !default;
+$button-border-color:           $button-bg-color !default;
+$button-border-color-hover:     $button-bg-color !default;
+$button-standard-opacity:       0.8 !default;
 
 // Top bar (the Nav)
-
-
 
 $topbar-bg-color:               $white !default;
 $topbar-link-bg-hover:          $secondary-color-lighter-accent !default;
