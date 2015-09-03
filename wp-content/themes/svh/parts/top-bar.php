@@ -20,7 +20,7 @@
                 </a>
             </li>
         </ul>
-        <section class="top-bar-section">
+        <section class="top-bar-section right">
             <?php foundationpress_top_bar_l(); ?>
             <?php foundationpress_top_bar_r(); ?>
         </section>

@@ -1,0 +1,19 @@
+/// -- Used for an image that spans 100% and has overlayed text -- ///
+
+.full-width-image-block {
+    color: white;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    h2 {
+        color: white;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}

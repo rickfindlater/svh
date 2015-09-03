@@ -89,15 +89,17 @@ $button-border-width: 			1px !default;
 
 // Top bar (the Nav)
 
-$topbar-height:                 rem-calc(80) !default;
+
+
 $topbar-bg-color:               $white !default;
 $topbar-link-bg-hover:          $secondary-color-lighter-accent !default;
 $topbar-logo-width:             140px !default;
 $topbar-logo-height:            48px !default;
+$top-bar-logo-margin:           16px;
+$topbar-height:                 rem-calc(80) !default;
 $topbar-link-color:             $anchor-font-color !default;
 $topbar-link-color-hover:       $anchor-font-color !default;
 $topbar-link-font-size:         rem-calc(15) !default;
-$topbar-link-weight:            $font-weight-light !default;
 
 
 // Teaser block
