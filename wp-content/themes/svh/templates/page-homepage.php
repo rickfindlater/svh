@@ -35,7 +35,7 @@ get_header(); ?>
 	<!-- end teaser blocks -->
 </div>
 
-<!-- Start single quote block -->
+<!-- Start full width image block -->
 <div class="full-width-image-block">
     <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
 	<div class="row">
