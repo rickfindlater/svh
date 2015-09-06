@@ -35,10 +35,10 @@ get_header(); ?>
 	<!-- end teaser blocks -->
 </div>
 
+<div class="row">
 <!-- Start single quote block -->
-<div class="full-width-image-block">
-    <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
-    <div class="row">
+	<div class="full-width-image-block">
+        <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
     	<div class="large-8 large-centered columns">
     	<h2><?php the_field( 'header', 70 ); ?></h2>
 		<p class="lead"><?php the_field( 'description', 70 ); ?></p>
@@ -47,9 +47,12 @@ get_header(); ?>
     </div>
 </div>
 
-<!-- Start single quote block -->
-<img src="<?php the_field( 'profile_image', 67 ); ?>">
-<p><?php the_field( 'quote_content', 67 );	?></p>
-<p><?php the_field( 'quote_name', 67 );	?></p>
+<div class="row">
+	<!-- Start single quote block -->
+	<img src="<?php the_field( 'profile_image', 67 ); ?>">
+	<p><?php the_field( 'quote_content', 67 );	?></p>
+	<p><?php the_field( 'quote_name', 67 );	?></p>
+</div>
+
 
 <?php get_footer(); ?>
