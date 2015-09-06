@@ -3,8 +3,8 @@
 Template Name: Homepage
 Description: Only used for the site homepage
 */
-get_header(); ?>
 
+get_header(); ?>
 
 <div class="row row-standard-padding" role="main">
 
@@ -24,7 +24,7 @@ get_header(); ?>
 					<img src="<?php the_field('teaser_image'); ?>" alt="Teaser image">
 					<p><?php the_field('teaser_summary'); ?></p>
 					<a class="button secondary outline radius extra-side-padding" href="<?php the_field('learn_more_link'); ?>">Learn more</a>
-				<!-- custom edit link for posts is user is logged in -->
+					<!-- custom edit link for posts is user is logged in -->
 					<?php if ( is_user_logged_in() ) { ?>
 					<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
 				</div>
@@ -40,7 +40,7 @@ get_header(); ?>
     <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
     <div class="row">
     	<div class="large-8 large-centered columns">
-    	        <h2><?php the_field( 'header', 70 ); ?></h2>
+    	<h2><?php the_field( 'header', 70 ); ?></h2>
 		<p class="lead"><?php the_field( 'description', 70 ); ?></p>
 		<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'link', 70 ); ?>">Find out about us</a>
     	</div>
