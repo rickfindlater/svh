@@ -35,16 +35,16 @@ get_header(); ?>
 	<!-- end teaser blocks -->
 </div>
 
-<div class="row">
 <!-- Start single quote block -->
-	<div class="full-width-image-block">
-        <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
-    	<div class="large-8 large-centered columns">
-    	<h2><?php the_field( 'header', 70 ); ?></h2>
+<div class="full-width-image-block">
+    <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
+	<div class="row">
+		<div class="large-8 large-centered columns">
+	    <h2><?php the_field( 'header', 70 ); ?></h2>
 		<p class="lead"><?php the_field( 'description', 70 ); ?></p>
 		<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'link', 70 ); ?>">Find out about us</a>
-    	</div>
-    </div>
+	    </div>
+	</div>
 </div>
 
 <div class="row">
