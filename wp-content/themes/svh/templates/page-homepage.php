@@ -48,12 +48,20 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="row">
-	<!-- Start single quote block -->
-	<img src="<?php the_field( 'profile_image', 67 ); ?>">
-	<p><?php the_field( 'quote_content', 67 );	?></p>
-	<p><?php the_field( 'quote_name', 67 );	?></p>
+<!-- Start single quote block -->
+<div class="testimonial-x-1-block block-alt-color text-center">
+	<div class="row row-standard-padding">
+		<div class="medium-6 medium-centered columns">
+			<i class="btl bt-quote-left bt-4x text-primary"></i>
+			<div class="testimonial-quote testimonial-quote-large">
+				<p class=""><?php the_field( 'quote_content', 67 );	?></p>
+			</div>
+			<img class="identity identity-large" src="<?php the_field( 'profile_image', 67 ); ?>">
+			<p><?php the_field( 'quote_name', 67 );	?></p>
+		</div>
+	</div>
 </div>
+
 
 
 <?php get_footer(); ?>
