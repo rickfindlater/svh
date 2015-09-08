@@ -27,8 +27,9 @@ get_header(); ?>
 					<!-- custom edit link for posts is user is logged in -->
 					<?php if ( is_user_logged_in() ) { ?>
 					<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
+					<?php } ?>
 				</div>
-				<?php }
+			<?php
 			}
 		}
 	?>
