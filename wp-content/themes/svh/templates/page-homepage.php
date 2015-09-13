@@ -74,6 +74,8 @@ get_header(); ?>
 	</div>
 </div>
 
-
+<!-- Start contact form webform -->
+<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+<!-- Start contact form webform -->
 
 <?php get_footer(); ?>
