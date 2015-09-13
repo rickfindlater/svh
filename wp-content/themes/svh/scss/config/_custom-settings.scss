@@ -9,6 +9,10 @@ $font-family-serif: 			Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: 		Consolas, "Liberation Mono", Courier, monospace;
 $font-family-icon-font:			"Black Tie";
 
+$icon-font-light-weight:        200 !default;
+$icon-font-reg-weight:          normal !default;
+
+
 // We use these to define default font weights
 $font-weight-light: 			200 !default;
 $font-weight-normal: 			normal !default;
@@ -80,7 +84,8 @@ $row-standard-padding:          50px !default;
 
 // Basic style rules 
 
-$global-radius: 					6px!default;
+$global-radius: 					6px !default;
+$global-radius-small:               4px !default;
 
 // Headings, type etc
 
@@ -131,6 +136,15 @@ $tabbar-left-section-border:    solid 1px white !default;
 $off-canvas-bg:                 $primary-color !default;
 $off-canvas-bg-hover:           scale-color($off-canvas-bg, $lightness: -30%) !default;
 $off-canvas-bg-active:          scale-color($off-canvas-bg, $lightness: -30%) !default;
+
+
+// Inputs
+
+$form-label-font-size:          rem-calc(16) !default;
+$input-box-shadow:              inset 0 1px 1px rgba(0,0,0,0.1) !default;
+$input-border-radius:           $global-radius-small !default;
+$input-border-color:            scale-color($white, $lightness: -15%) !default;
+$input-focus-border-color:      $primary-color !default;
 
 
 // Footer

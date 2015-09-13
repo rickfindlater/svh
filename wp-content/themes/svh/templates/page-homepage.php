@@ -49,7 +49,7 @@ get_header(); ?>
 </div>
 
 <!-- Start of embeded video block -->
-<div class="video-embed-block block-alt-color text-center">
+<div class="block-alt-color text-center">
 	<div class="row row-standard-padding">
 		<div class="medium-12 columns">
 			<h3><?php the_field( 'title', 81 ); ?></h3>
@@ -73,9 +73,19 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
 <!-- Start contact form -->
-<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+<div class="block-alt-color">
+	<div class="row row-standard-padding">
+		<div class="medium-6 medium-centered columns">
+			<div class="text-center">
+				<h3>Book a consultation now</h3>
+				<p>Let us know your details and we‘ll contact you within one working day.</p>
+			</div>
+			<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+		</div>
+	</div>
+</div>
+
 <!-- End contact form -->
 
 <!-- Start newsletter subscription form -->
