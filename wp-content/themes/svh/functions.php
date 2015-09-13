@@ -49,7 +49,7 @@ require_once( 'library/custom-header.php' );
 
 //**** teaser ****
 
-function my_custom_post_teaser() {
+function post_teaser() {
 	$labels = array(
 		'name'               => _x( 'Teaser', 'post type general name' ),
 		'singular_name'      => _x( 'Teaser', 'post type singular name' ),
@@ -74,11 +74,11 @@ function my_custom_post_teaser() {
 	);
 	register_post_type( 'teaser', $args );
 }
-add_action( 'init', 'my_custom_post_teaser' );
+add_action( 'init', 'post_teaser' );
 
 //**** single quote ****
 
-function my_custom_post_single_quote() {
+function post_single_quote() {
 	$labels = array(
 		'name'               => _x( 'Single quote', 'post type general name' ),
 		'singular_name'      => _x( 'Single quote', 'post type singular name' ),
@@ -103,11 +103,11 @@ function my_custom_post_single_quote() {
 	);
 	register_post_type( 'single_quote', $args );
 }
-add_action( 'init', 'my_custom_post_single_quote' );
+add_action( 'init', 'post_single_quote' );
 
 //**** Full width image block ****
 
-function my_custom_post_fw_imgblk() {
+function post_fw_imgblk() {
 	$labels = array(
 		'name'               => _x( 'Full width image block', 'post type general name' ),
 		'singular_name'      => _x( 'Full width image block', 'post type singular name' ),
@@ -132,6 +132,35 @@ function my_custom_post_fw_imgblk() {
 	);
 	register_post_type( 'fw_imgblk', $args );
 }
-add_action( 'init', 'my_custom_post_fw_imgblk' );
+add_action( 'init', 'post_fw_imgblk' );
+
+//**** Video block ****
+
+function post_video() {
+	$labels = array(
+		'name'               => _x( 'Video block', 'post type general name' ),
+		'singular_name'      => _x( 'Video block', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Video block block' ),
+		'edit_item'          => __( 'Edit Video block' ),
+		'new_item'           => __( 'New Video block' ),
+		'all_items'          => __( 'All Video blocks' ),
+		'view_item'          => __( 'View Video block' ),
+		'search_items'       => __( 'Search Video block' ),
+		'not_found'          => __( 'No Video block found' ),
+		'not_found_in_trash' => __( 'No Video block found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Video block'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Video block',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'video', $args );
+}
+add_action( 'init', 'post_video' );
 
 ?>

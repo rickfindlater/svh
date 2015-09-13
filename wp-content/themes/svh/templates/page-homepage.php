@@ -52,9 +52,9 @@ get_header(); ?>
 <div class="video-embed-block block-alt-color text-center">
 	<div class="row row-standard-padding">
 		<div class="medium-12 columns">
-			<h3>One of our many success stories</h3>
+			<h3><?php the_field( 'title', 81 ); ?></h3>
 			<div class="flex-video widescreen vimeo">
-				<iframe src="https://player.vimeo.com/video/138174318?color=ff0179&badge=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<?php the_field( 'video_embed_code', 81 ); ?>
 			</div>
 		</div>
 	</div>
@@ -74,8 +74,12 @@ get_header(); ?>
 	</div>
 </div>
 
-<!-- Start contact form webform -->
+<!-- Start contact form -->
 <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
-<!-- Start contact form webform -->
+<!-- End contact form -->
+
+<!-- Start newsletter subscription form -->
+<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+<!-- End newsletter subscription form -->
 
 <?php get_footer(); ?>
