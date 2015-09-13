@@ -46,6 +46,9 @@ get_header(); ?>
 		<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'link', 70 ); ?>">Find out about us</a>
 	    </div>
 	</div>
+	<?php if ( is_user_logged_in() ) { ?>
+		<a class="post-edit" href="<?php echo get_edit_post_link( 70, $context ); ?>">Edit this</a>
+	<?php } ?>
 </div>
 
 <!-- Start of embeded video block -->
@@ -58,6 +61,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<?php if ( is_user_logged_in() ) { ?>
+		<a class="post-edit" href="<?php echo get_edit_post_link( 81, $context ); ?>">Edit this</a>
+	<?php } ?>
 </div>	
 
 <!-- Start single quote block -->
@@ -72,6 +78,9 @@ get_header(); ?>
 			<h5><?php the_field( 'quote_name', 67 );	?></h5>
 		</div>
 	</div>
+	<?php if ( is_user_logged_in() ) { ?>
+		<a class="post-edit" href="<?php echo get_edit_post_link( 67, $context ); ?>">Edit this</a>
+	<?php } ?>
 </div>
 <!-- Start contact form -->
 <div class="block-alt-color">
