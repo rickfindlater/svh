@@ -48,16 +48,28 @@ get_header(); ?>
 	</div>
 </div>
 
-<!-- Start single quote block -->
-<div class="testimonial-x-1-block block-alt-color text-center">
+<!-- Start of embeded video block -->
+<div class="video-embed-block block-alt-color text-center">
 	<div class="row row-standard-padding">
-		<div class="medium-6 medium-centered columns">
-			<i class="btl bt-quote-left bt-4x text-primary"></i>
+		<div class="medium-12 columns">
+			<h3>One of our many success stories</h3>
+			<div class="flex-video widescreen vimeo">
+				<iframe src="https://player.vimeo.com/video/138174318?color=ff0179&badge=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<!-- Start single quote block -->
+<div class="testimonial-x-1-block text-center">
+	<div class="row row-standard-padding">
+		<div class="medium-8 medium-centered columns">
+			<i class="btl bt-quote-left bt-3x text-primary"></i>
 			<div class="testimonial-quote testimonial-quote-large">
 				<p class=""><?php the_field( 'quote_content', 67 );	?></p>
 			</div>
-			<img class="identity identity-large" src="<?php the_field( 'profile_image', 67 ); ?>">
-			<p><?php the_field( 'quote_name', 67 );	?></p>
+			<img class="identity" src="<?php the_field( 'profile_image', 67 ); ?>">
+			<h5><?php the_field( 'quote_name', 67 );	?></h5>
 		</div>
 	</div>
 </div>

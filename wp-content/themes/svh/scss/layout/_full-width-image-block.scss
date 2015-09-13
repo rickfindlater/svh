@@ -16,6 +16,10 @@
         left: 0;
         max-width: 100%;
 
+        @media screen and (min-width: $large-breakpoint) {
+           width: 100%;
+        }
+
         @media screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint) {
             max-width: 120%;
         }

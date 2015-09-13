@@ -54,6 +54,7 @@ $anchor-font-color:             $primary-color;
 
 
 // We use these to control various global styles
+
 $body-bg: $white;
 $body-font-color: 				$charcoal;
 $body-font-family: 				$font-family-sans-serif;
@@ -64,6 +65,7 @@ $header-text-rendering:			optimizeLegibility;
 $topbar-link-weight: 			bold;
 
 // Media query breakpoints
+
 $small-breakpoint:  			em-calc(640);
 $medium-breakpoint: 			em-calc(1024);
 $topbar-breakpoint: 			em-calc(820);
@@ -78,17 +80,22 @@ $row-standard-padding:          50px !default;
 
 // Basic style rules 
 
-$global-radius: 				6px!default;
+$global-radius: 					6px!default;
 
 // Headings, type etc
-$h1-font-size: 					rem-calc(50) !default;
-$h2-font-size: 					rem-calc(43) !default;
-$h3-font-size: 					rem-calc(33) !default;
-$h4-font-size: 					rem-calc(26) !default;
-$h5-font-size: 					rem-calc(22) !default;
-$h6-font-size: 					1rem !default;
 
-$header-line-height: 			1.1 !default;
+$h1-font-size: 						rem-calc(50) !default;
+$h2-font-size: 						rem-calc(43) !default;
+$h3-font-size: 						rem-calc(33) !default;
+$h4-font-size: 						rem-calc(26) !default;
+$h5-font-size: 						rem-calc(22) !default;
+$h6-font-size: 						1rem !default;
+
+$header-bottom-margin:              1rem !default;
+$header-line-height: 				1.1 !default;
+
+$testimonial-quote-font-size:		$h5-font-size !default;
+$testimonial-quote-font-size-lg:	$h4-font-size !default;
 
 
 // Buttons
@@ -112,7 +119,34 @@ $topbar-link-color:             $anchor-font-color !default;
 $topbar-link-color-hover:       $anchor-font-color !default;
 $topbar-link-font-size:         rem-calc(15) !default;
 
+// Tab bar (mobile nav)
+
+$tabbar-bg:                     $white !default;
+$tabbar-color:                  $primary-color !default;
+$tabbar-header-color:           $primary-color !default;
+$tabbar-menu-icon-color:        $primary-color !default;
+$tabbar-menu-icon-hover:        scale-color($tabbar-menu-icon-color, $lightness: -30%) !default;
+$tabbar-left-section-border:    solid 1px white !default;
+
+$off-canvas-bg:                 $primary-color !default;
+$off-canvas-bg-hover:           scale-color($off-canvas-bg, $lightness: -30%) !default;
+$off-canvas-bg-active:          scale-color($off-canvas-bg, $lightness: -30%) !default;
+
+
+// Footer
+
+$footer-bg-color:               $primary-color;
 
 // Teaser block
 
-$teaser-image-dimensions:		180px;
+$teaser-image-dimensions:		180px !default;
+
+
+// Identity
+
+$identity-base-size:			84px !default;
+
+
+// Video Flex box
+
+$flex-video-margin-bottom: 		0 !default;

@@ -1,5 +1,18 @@
 /// --- A single testimonial quote with a profile picture -- ///
 
 .testimonial-quote {
-    font-weight: $font-weight-light;
+    p {
+        font-weight: $font-weight-light;
+    }
+
+    &.testimonial-quote-large {
+
+        p {
+            font-size: $testimonial-quote-font-size-lg;
+
+            @media screen and (max-width:$medium-breakpoint) {
+                font-size: $testimonial-quote-font-size;
+            }
+        }
+    }
 }

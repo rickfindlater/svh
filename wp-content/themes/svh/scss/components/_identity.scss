@@ -1,0 +1,12 @@
+// -- Identity for when people are represented -- //
+
+.identity {
+    width: $identity-base-size;
+    height: $identity-base-size;
+    @include border-radius (100%);
+
+    @media screen and (max-width:$medium-breakpoint) {
+        width: $identity-base-size / 2;
+        height: $identity-base-size / 2;
+    }
+}
