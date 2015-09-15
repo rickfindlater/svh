@@ -82,6 +82,7 @@ get_header(); ?>
 		<a class="post-edit" href="<?php echo get_edit_post_link( 67, $context ); ?>">Edit this</a>
 	<?php } ?>
 </div>
+
 <!-- Start contact form -->
 <div class="block-alt-color">
 	<div class="row row-standard-padding">
