@@ -1,0 +1,44 @@
+/// --- Block that houses the profiles of the surgeons --- ///
+
+.about-us-bio {
+    border-bottom: 1px solid $secondary-color-lighter-accent;
+    padding-top: $about-us-bio-blocks-standard-gap;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    img {
+        margin: auto;
+        display: block;
+        @include border-radius(100%);
+
+        @media screen and (max-width: $medium-breakpoint) {
+            margin-bottom: $header-top-margin;
+        }
+    }
+
+   .about-us-bio-name {
+       margin: 0;
+
+       @media screen and (max-width: $medium-breakpoint) {
+           text-align: center;
+       }
+    }
+
+    .subheader {
+        text-transform: uppercase;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            text-align: center;
+        }
+    }
+
+    p {
+        margin-bottom: $about-us-bio-blocks-standard-gap;
+    }
+}

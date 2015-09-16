@@ -53,4 +53,19 @@
             padding-top: $row-standard-padding;
         }
     }
+
+    //Centers the content rather than puts it down the bottom
+
+    &.full-width-image-block-no-cta {
+
+        .row {
+            padding-top: ($row-standard-padding * 3);
+            padding-bottom: ($row-standard-padding * 3);
+
+            @media screen and (max-width: $medium-breakpoint) {
+                padding-top: $row-standard-padding;
+                padding-bottom: $row-standard-padding;
+            }
+        }
+    }
 }

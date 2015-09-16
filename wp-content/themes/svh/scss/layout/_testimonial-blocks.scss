@@ -1,8 +1,16 @@
 /// --- A single testimonial quote with a profile picture -- ///
 
 .testimonial-quote {
+
     p {
         font-weight: $font-weight-light;
+    }
+
+    &.testimonial-quote-small {
+
+        p {
+            font-size: $testimonial-quote-font-size-small;
+        }
     }
 
     &.testimonial-quote-large {
@@ -16,3 +24,4 @@
         }
     }
 }
+

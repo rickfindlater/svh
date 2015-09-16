@@ -8,6 +8,29 @@
         @include border-radius($global-radius-small);
     }
 
+    p {
+        margin: 0;
+    }
+
+    br {
+        display: none;
+    }
+
+    .wpcf7-submit {
+        float: right;
+        button::-moz-focus-inner {border:0; padding:0;}
+        @include button-base;
+        @include button-size;
+        @include button-style;
+        @include single-transition(background-color);
+        @include border-radius($global-radius);
+        margin: 0;
+
+        @media screen and (max-width: $medium-breakpoint){
+            width: 100%;
+        }
+    }
+
     .wpcf7-form-control-wrap {
 
         &:before {
@@ -15,7 +38,7 @@
             z-index: 2;
             left: 7px;
             font-size: 1.5em;
-            top: 0;
+            top: 2px;
             font-family: $font-family-icon-font;
             font-weight: $icon-font-light-weight;
             color: $primary-color;
@@ -39,6 +62,13 @@
 
             &:before {
                 content: "\F005"; // bt-phone
+            }
+        }
+
+        &.your-message {
+
+            .wpcf7-form-control {
+                padding-left: $form-spacing / 2;
             }
         }
     }
