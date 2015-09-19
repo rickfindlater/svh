@@ -41,22 +41,35 @@
         margin: 20px 0 0;
     }
 
-    .row {
-        padding-top: ($row-standard-padding * 4);
-        padding-bottom: $row-standard-padding;
+    .cta-phone-number {
+        margin: 20px 0 0;
+        font-size: $h5-font-size;
+        font-weight: $font-weight-light;
 
-        @media screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint) {
-            padding-top: ($row-standard-padding * 3);
-        }
-
-        @media screen and (max-width: $medium-breakpoint) {
-            padding-top: $row-standard-padding;
+        span {
+            font-weight: $font-weight-ultra-bold;
         }
     }
 
-    //Centers the content rather than puts it down the bottom
+    //Puts the content down the bottom
+    &.full-width-image-block-bottom-cta {
 
-    &.full-width-image-block-no-cta {
+        .row {
+            padding-top: ($row-standard-padding * 4);
+            padding-bottom: $row-standard-padding;
+
+            @media screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint) {
+                padding-top: ($row-standard-padding * 3);
+            }
+
+            @media screen and (max-width: $medium-breakpoint) {
+                padding-top: $row-standard-padding;
+            }
+        }
+    }
+
+    //Centers the content
+    &.full-width-image-block-centered-cta {
 
         .row {
             padding-top: ($row-standard-padding * 3);

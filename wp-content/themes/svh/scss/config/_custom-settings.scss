@@ -51,12 +51,20 @@ $info-color: 					#a0d3e8;
 $steel:                         #AFB2BA;
 $charcoal:                      #555555;
 
+// Light Accents
+
 $primary-color-light-accent:  	lighten($primary-color,10%);
 $primary-color-lighter-accent:	saturate(lighten($primary-color,20%),20%) !default;
-$primary-color-lightest-accent:	saturate(lighten($primary-color,40%),10%) !default;
+$primary-color-lightest-accent:	saturate(lighten($primary-color,30%),25%) !default;
 
 $secondary-color-light-accent:  lighten($secondary-color,10%);
 $secondary-color-lighter-accent:lighten($secondary-color,20%);
+
+// Dark accents
+
+$primary-color-dark-accent:		saturate(darken($primary-color,10%),5%) !default;
+$primary-color-darker-accent:	saturate(darken($primary-color,20%),2%) !default;
+
 
 // Anchors ///
 
@@ -111,6 +119,8 @@ $subheader-font-weight:             $font-weight-bold !default;
 $subheader-top-margin:              .2rem !default;
 $subheader-bottom-margin:           .2rem !default;
 
+$lead-line-height:					1.4 !default;
+
 $testimonial-quote-font-size-small: rem-calc(18) !default;
 $testimonial-quote-font-size:		$h5-font-size !default;
 $testimonial-quote-font-size-lg:	$h4-font-size !default;
@@ -124,6 +134,9 @@ $button-bg-color:               $primary-color-lighter-accent !default;
 $button-border-color:           $button-bg-color !default;
 $button-border-color-hover:     $button-bg-color !default;
 $button-standard-opacity:       0.8 !default;
+
+$button-dark-primary-bg:		$primary-color-darker-accent !default;
+$button-dark-primary-bg-hover:	$primary-color-dark-accent !default;
 
 // Top bar (the Nav)
 
@@ -168,7 +181,10 @@ $input-focus-bg-color: 			$ghost !default;
 
 // Footer
 
-$footer-bg-color:               $primary-color;
+$footer-bg-color:               		$primary-color;
+$footer-bg-color-lightest:      		saturate(lighten($footer-bg-color,30%),20%);
+
+$footer-newsletter-placeholder-color:	$primary-color;
 
 
 // Teaser block

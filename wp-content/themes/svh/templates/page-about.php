@@ -7,7 +7,7 @@ Description: Only used for the about homepage
 get_header(); ?>
 
 <!-- Start full width image block -->
-<div class="full-width-image-block full-width-image-block-no-cta">
+<div class="full-width-image-block full-width-image-block-centered-cta">
     <img src="<?php bloginfo('template_directory');?>/assets/img/svh_about_hero.jpg" alt="The team">
 	<div class="row">
 		<div class="large-8 large-centered columns">
@@ -78,9 +78,11 @@ get_header(); ?>
 		<div class="medium-4 columns text-center">
 			<i class="btl bt-quote-left bt-2x text-primary"></i>
 			<div class="testimonial-quote testimonial-quote-small">
-				<p><?php the_field( 'quote_content', 110 ); ?></p>
-				<img class="identity" src="<?php the_field( 'profile_image', 110 ); ?>">
-				<h5><?php the_field( 'quote_name', 110 ); ?></h5>
+				<p>
+					Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.
+				</p>
+				<img class="identity" src="<?php the_field( 'profile_image', 67 ); ?>">
+
 			</div>
 			<?php if ( is_user_logged_in() ) { ?>
 				<a class="post-edit" href="<?php echo get_edit_post_link( 110, $context ); ?>">Edit this</a>
