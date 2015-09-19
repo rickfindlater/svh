@@ -7,7 +7,7 @@ Description: Only used for the about homepage
 get_header(); ?>
 
 <!-- Start full width image block -->
-<div class="full-width-image-block full-width-image-block-no-cta">
+<div class="full-width-image-block full-width-image-block-centered-cta">
     <img src="<?php bloginfo('template_directory');?>/assets/img/svh_about_hero.jpg" alt="The team">
 	<div class="row">
 		<div class="large-8 large-centered columns">
@@ -73,11 +73,40 @@ get_header(); ?>
 					Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.
 				</p>
 				<img class="identity" src="<?php the_field( 'profile_image', 67 ); ?>">
-
+				<h6>June Summers</h6>
 			</div>
 		</div>
-		<div class="medium-4 columns">Hi</div>
-		<div class="medium-4 columns">Hi</div>
+		<div class="medium-4 columns text-center">
+			<i class="btl bt-quote-left bt-2x text-primary"></i>
+			<div class="testimonial-quote testimonial-quote-small">
+				<p>
+					Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.
+				</p>
+				<img class="identity" src="<?php the_field( 'profile_image', 67 ); ?>">
+				<h6>June Summers</h6>
+			</div>
+		</div>
+		<div class="medium-4 columns text-center">
+			<i class="btl bt-quote-left bt-2x text-primary"></i>
+			<div class="testimonial-quote testimonial-quote-small">
+				<p>
+					Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.
+				</p>
+				<img class="identity" src="<?php the_field( 'profile_image', 67 ); ?>">
+				<h6>June Summers</h6>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full-width-image-block full-width-image-block-centered-cta">
+	<img src="http://placehold.it/1400x700">
+	<div class="row">
+		<div class="large-10 large-centered columns">
+			<h2>Learn more about our non-invasive techniques</h2>
+			<p class="lead">Omnis iste natus error sit voluptatem accusantium doloremque laudantium iste natus error sit voluptatem</p>
+			<a class="button large primary radius extra-side-padding button-opacity" href="#">Book a consultation</a>
+			<p class="cta-phone-number">or call <span>(800) 777 9999</span></p>
+		</div>		
 	</div>
 </div>
 

@@ -1,0 +1,45 @@
+///-- A 'Subscribe to our newsletter' single input form. Sits just above the footer --///
+
+.newsletter-form {
+    background-color: $footer-bg-color;
+    padding: ($row-standard-padding / 2) 0;
+    text-align: center;
+
+    .newsletter-heading {
+        margin-top: 0;
+        color: $footer-bg-color-lightest;
+    }
+
+    input {
+        margin-bottom: 0;
+    }
+
+    .newsletter-email-input {
+        background-color:  $footer-bg-color-lightest;
+        border-color: $footer-bg-color-lightest;
+        @include border-radius($global-radius);
+
+        @media screen and (max-width: $medium-breakpoint) {
+            margin-bottom: $form-spacing;
+        }
+    }
+
+    .button.postfix {
+        @include border-radius($global-radius);
+    }
+
+    ::-webkit-input-placeholder { // WebKit, Blink, Edge
+        color:    $footer-newsletter-placeholder-color;
+    }
+    :-moz-placeholder { // Mozilla Firefox 4 to 18
+        color:    $footer-newsletter-placeholder-color;
+        opacity:  1;
+    }
+    ::-moz-placeholder { // Mozilla Firefox 19+
+        color:    $footer-newsletter-placeholder-color;
+        opacity:  1;
+    }
+    :-ms-input-placeholder { // Internet Explorer 10-11
+        color:    $footer-newsletter-placeholder-color;
+    }
+}

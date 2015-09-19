@@ -18,6 +18,16 @@
 		}
 	}
 
+	// A darker version of the main button
+	&.dark-primary  {
+		@include button-style($bg:$button-dark-primary-bg, $bg-hover:$button-dark-primary-bg-hover, $border-color:$button-dark-primary-bg);
+		color: $primary-color-lightest-accent;
+
+		&:hover, &:active, &:focus {
+			border-color: $button-dark-primary-bg-hover;
+		}
+	}
+
 	&.outline {
 		background-color: transparent;
 		color: $primary-color;

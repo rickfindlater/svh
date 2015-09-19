@@ -37,7 +37,7 @@ get_header(); ?>
 </div>
 
 <!-- Start full width image block -->
-<div class="full-width-image-block">
+<div class="full-width-image-block full-width-image-block-bottom-cta">
     <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
 	<div class="row">
 		<div class="large-8 large-centered columns">
