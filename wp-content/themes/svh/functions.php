@@ -112,7 +112,7 @@ function post_fw_imgblk() {
 	$labels = array(
 		'name'               => _x( 'Full width image block', 'post type general name' ),
 		'singular_name'      => _x( 'Full width image block', 'post type singular name' ),
-		'add_new_item'       => __( 'Add new Full width image block block' ),
+		'add_new_item'       => __( 'Add new Full width image block' ),
 		'edit_item'          => __( 'Edit Full width image block' ),
 		'new_item'           => __( 'New Full width image block' ),
 		'all_items'          => __( 'All Full width image blocks' ),
@@ -141,7 +141,7 @@ function post_video() {
 	$labels = array(
 		'name'               => _x( 'Video block', 'post type general name' ),
 		'singular_name'      => _x( 'Video block', 'post type singular name' ),
-		'add_new_item'       => __( 'Add new Video block block' ),
+		'add_new_item'       => __( 'Add new Video block' ),
 		'edit_item'          => __( 'Edit Video block' ),
 		'new_item'           => __( 'New Video block' ),
 		'all_items'          => __( 'All Video blocks' ),
@@ -163,5 +163,63 @@ function post_video() {
 	register_post_type( 'video', $args );
 }
 add_action( 'init', 'post_video' );
+
+//**** 3 quote block ****
+
+function post_three_quote() {
+	$labels = array(
+		'name'               => _x( 'Three quote block', 'post type general name' ),
+		'singular_name'      => _x( 'Three quote block', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Three quote' ),
+		'edit_item'          => __( 'Edit Three quote block' ),
+		'new_item'           => __( 'New Three quote block' ),
+		'all_items'          => __( 'All Three quote blocks' ),
+		'view_item'          => __( 'View Three quote block' ),
+		'search_items'       => __( 'Search Three quote block' ),
+		'not_found'          => __( 'No Three quote block found' ),
+		'not_found_in_trash' => __( 'No Three quote block found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Three quote block'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Three quote block',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'three_quote', $args );
+}
+add_action( 'init', 'post_three_quote' );
+
+//**** 3 quote block ****
+
+function post_about_person() {
+	$labels = array(
+		'name'               => _x( 'About person block', 'post type general name' ),
+		'singular_name'      => _x( 'About person block', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new About person' ),
+		'edit_item'          => __( 'Edit About person block' ),
+		'new_item'           => __( 'New About person block' ),
+		'all_items'          => __( 'All About person blocks' ),
+		'view_item'          => __( 'View About person block' ),
+		'search_items'       => __( 'Search About person block' ),
+		'not_found'          => __( 'No About person block found' ),
+		'not_found_in_trash' => __( 'No About person block found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'About person block'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a About person block',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'about_person', $args );
+}
+add_action( 'init', 'post_about_person' );
 
 ?>

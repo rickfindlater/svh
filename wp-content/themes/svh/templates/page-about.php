@@ -22,44 +22,53 @@ get_header(); ?>
 <!-- Start the bio blocks -->
 <div class="row about-us-bio-block row-standard-padding">
 	<div class="large-8 medium-10 medium-centered columns">
-		<!--Start of one bio-->
+		<!--Start of bio 1-->
 		<div class="row about-us-bio">
 			<!--Picture-->
 			<div class=" medium-3 medium-uncentered small-6 small-centered columns">
-				<img src="<?php bloginfo('template_directory');?>/assets/img/jk-wicks-bio-pic.jpg" alt="JK Wicks">
+				<img src="<?php the_field( 'profile_image', 114 ); ?>" alt="JK Wicks">
 			</div>
 			<!--Text-->
 			<div class="medium-9 small-12 columns">
-				<h3 class="about-us-bio-name">JK Wicks</h3>
-				<h6 class="subheader">MBCHB (OTAGO), FRACS (GENERAL SURGERY), FRACS (VASCULAR)</h6>
-				<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+				<h3 class="about-us-bio-name"><?php the_field( 'name', 114 ); ?></h3>
+				<h6 class="subheader"><?php the_field( 'sub_name', 114 ); ?></h6>
+				<?php the_field( 'bio', 114 ); ?>
 			</div>
+			<?php if ( is_user_logged_in() ) { ?>
+				<a class="post-edit" href="<?php echo get_edit_post_link( 115, $context ); ?>">Edit this</a>
+			<?php } ?>
 		</div>
-		<!--Start of one bio-->
+		<!--Start of bio 2-->
 		<div class="row about-us-bio">
 			<!--Picture-->
 			<div class=" medium-3 medium-uncentered small-6 small-centered columns">
-				<img src="<?php bloginfo('template_directory');?>/assets/img/lupe-taumoepeau-bio-pic.jpg" alt="JK Wicks">
+				<img src="<?php the_field( 'profile_image', 115 ); ?>" alt="JK Wicks">
 			</div>
 			<!--Text-->
 			<div class="medium-9 small-12 columns">
-				<h3 class="about-us-bio-name">JK Wicks</h3>
-				<h6 class="subheader">MBCHB (OTAGO), FRACS (GENERAL SURGERY), FRACS (VASCULAR)</h6>
-				<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+				<h3 class="about-us-bio-name"><?php the_field( 'name', 115 ); ?></h3>
+				<h6 class="subheader"><?php the_field( 'sub_name', 115 ); ?></h6>
+				<?php the_field( 'bio', 115 ); ?>
 			</div>
+			<?php if ( is_user_logged_in() ) { ?>
+				<a class="post-edit" href="<?php echo get_edit_post_link( 115, $context ); ?>">Edit this</a>
+			<?php } ?>
 		</div>
-		<!--Start of one bio-->
+		<!--Start of bio 3-->
 		<div class="row about-us-bio">
 			<!--Picture-->
 			<div class=" medium-3 medium-uncentered small-6 small-centered columns">
-				<img src="<?php bloginfo('template_directory');?>/assets/img/richard-evans-bio-pic.jpg" alt="JK Wicks">
+				<img src="<?php the_field( 'profile_image', 116 ); ?>" alt="JK Wicks">
 			</div>
 			<!--Text-->
 			<div class="medium-9 small-12 columns">
-				<h3 class="about-us-bio-name">JK Wicks</h3>
-				<h6 class="subheader">MBCHB (OTAGO), FRACS (GENERAL SURGERY), FRACS (VASCULAR)</h6>
-				<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+				<h3 class="about-us-bio-name"><?php the_field( 'name', 116 ); ?></h3>
+				<h6 class="subheader"><?php the_field( 'sub_name', 116 ); ?></h6>
+				<?php the_field( 'bio', 116 ); ?>
 			</div>
+			<?php if ( is_user_logged_in() ) { ?>
+				<a class="post-edit" href="<?php echo get_edit_post_link( 116, $context ); ?>">Edit this</a>
+			<?php } ?>
 		</div>
 	</div>
 </div>
@@ -69,19 +78,37 @@ get_header(); ?>
 		<div class="medium-4 columns text-center">
 			<i class="btl bt-quote-left bt-2x text-primary"></i>
 			<div class="testimonial-quote testimonial-quote-small">
-				<p>
-					Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis.
-				</p>
-				<img class="identity" src="<?php the_field( 'profile_image', 67 ); ?>">
-
+				<p><?php the_field( 'quote_content', 110 ); ?></p>
+				<img class="identity" src="<?php the_field( 'profile_image', 110 ); ?>">
+				<h5><?php the_field( 'quote_name', 110 ); ?></h5>
 			</div>
+			<?php if ( is_user_logged_in() ) { ?>
+				<a class="post-edit" href="<?php echo get_edit_post_link( 110, $context ); ?>">Edit this</a>
+			<?php } ?>
 		</div>
-		<div class="medium-4 columns">Hi</div>
-		<div class="medium-4 columns">Hi</div>
+		<div class="medium-4 columns text-center">
+			<i class="btl bt-quote-left bt-2x text-primary"></i>
+			<div class="testimonial-quote testimonial-quote-small">
+				<p><?php the_field( 'quote_content', 111 ); ?></p>
+				<img class="identity" src="<?php the_field( 'profile_image', 111 ); ?>">
+				<h5><?php the_field( 'quote_name', 111 ); ?></h5>
+			</div>
+			<?php if ( is_user_logged_in() ) { ?>
+				<a class="post-edit" href="<?php echo get_edit_post_link( 111, $context ); ?>">Edit this</a>
+			<?php } ?>
+		</div>
+		<div class="medium-4 columns text-center">
+			<i class="btl bt-quote-left bt-2x text-primary"></i>
+			<div class="testimonial-quote testimonial-quote-small">
+				<p><?php the_field( 'quote_content', 112 ); ?></p>
+				<img class="identity" src="<?php the_field( 'profile_image', 112 ); ?>">
+				<h5><?php the_field( 'quote_name', 112 ); ?></h5>
+			</div>
+			<?php if ( is_user_logged_in() ) { ?>
+				<a class="post-edit" href="<?php echo get_edit_post_link( 112, $context ); ?>">Edit this</a>
+			<?php } ?>
+		</div>
 	</div>
 </div>
-
-
-	<!--<p>--><?php //the_field( 'background_image'); ?><!--</p>-->
 
 <?php get_footer(); ?>
