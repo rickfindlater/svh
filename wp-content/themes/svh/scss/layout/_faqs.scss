@@ -1,0 +1,14 @@
+.faqs-block {
+    background-color: $white;
+}
+
+.faqs-columns {
+    @include column-count (2);
+    @include column-rule (1px solid $secondary-color);
+    @include column-gap ($column-gutter * 4);
+
+    @media screen and (max-width: $small-breakpoint) {
+        @include column-count (1);
+    }
+}
+

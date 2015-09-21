@@ -16,7 +16,7 @@ $icon-font-reg-weight:          normal !default;
 // We use these to define default font weights
 $font-weight-light: 			200 !default;
 $font-weight-normal: 			normal !default;
-$font-weight-bold: 				bold !default;
+$font-weight-bold: 				600;
 $font-weight-ultra-bold: 		900 !default;
 
 
@@ -50,6 +50,7 @@ $warning-color: 				#f08a24;
 $info-color: 					#a0d3e8;
 $steel:                         #AFB2BA;
 $charcoal:                      #555555;
+
 
 // Light Accents
 
@@ -108,7 +109,9 @@ $h2-font-size: 						rem-calc(43) !default;
 $h3-font-size: 						rem-calc(33) !default;
 $h4-font-size: 						rem-calc(26) !default;
 $h5-font-size: 						rem-calc(22) !default;
-$h6-font-size: 						1rem !default;
+$h6-font-size: 						1.1rem !default;
+
+$header-font-weight: 				$font-weight-bold;
 
 $header-bottom-margin:              1rem !default;
 $header-line-height: 				1.1 !default;
@@ -208,3 +211,7 @@ $flex-video-margin-bottom: 		0 !default;
 // About us bio blocks
 
 $about-us-bio-blocks-standard-gap:  40px;
+
+
+// Last because it gets its variable from another bit
+$body-bg: 						$footer-bg-color-dark;

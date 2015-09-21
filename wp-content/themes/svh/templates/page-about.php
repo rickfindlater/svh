@@ -19,44 +19,45 @@ get_header(); ?>
 		<a class="post-edit" href="<?php echo get_edit_post_link( 70, $context ); ?>">Edit this</a>
 	<?php } ?>
 </div>
-
 <!-- Start the bio blocks -->
-<div class="row about-us-bio-block row-standard-padding">
-	<div class="large-8 medium-10 medium-centered columns">
+<div class="about-us-bio-block">
+	<div class="row row-standard-padding">
+		<div class="large-8 medium-10 medium-centered columns">
 
-		<?php
-		$args = array(
-			'post_type' => 'about_person',
-			'order' => ASC,
-		);
-		$teasers = new WP_Query( $args );
+			<?php
+			$args = array(
+				'post_type' => 'about_person',
+				'order' => ASC,
+			);
+			$teasers = new WP_Query( $args );
 
-		if( $teasers->have_posts() ) {
-			while( $teasers->have_posts() ) {
-				$teasers->the_post();
-				?>
-				<!--Start of bio 1-->
-				<div class="row about-us-bio">
-					<!--Picture-->
-					<div class=" medium-3 medium-uncentered small-6 small-centered columns">
-						<img src="<?php the_field( 'profile_image'); ?>" alt="JK Wicks">
+			if( $teasers->have_posts() ) {
+				while( $teasers->have_posts() ) {
+					$teasers->the_post();
+					?>
+					<!--Start of bio 1-->
+					<div class="row about-us-bio">
+						<!--Picture-->
+						<div class=" medium-3 medium-uncentered small-6 small-centered columns">
+							<img src="<?php the_field( 'profile_image'); ?>" alt="JK Wicks">
+						</div>
+						<!--Text-->
+						<div class="medium-9 small-12 columns">
+							<h3 class="about-us-bio-name"><?php the_field( 'name'); ?></h3>
+							<h6 class="subheader"><?php the_field( 'sub_name'); ?></h6>
+							<?php the_field( 'bio', 114 ); ?>
+						</div>
+						<?php if ( is_user_logged_in() ) { ?>
+							<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
+						<?php } ?>
 					</div>
-					<!--Text-->
-					<div class="medium-9 small-12 columns">
-						<h3 class="about-us-bio-name"><?php the_field( 'name'); ?></h3>
-						<h6 class="subheader"><?php the_field( 'sub_name'); ?></h6>
-						<?php the_field( 'bio', 114 ); ?>
-					</div>
-					<?php if ( is_user_logged_in() ) { ?>
-						<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
-					<?php } ?>
-				</div>
-				<?php
+					<?php
+				}
 			}
-		}
-		?>
+			?>
 
-	</div>
+		</div>
+	</div>	
 </div>
 <!-- End the bio blocks -->
 

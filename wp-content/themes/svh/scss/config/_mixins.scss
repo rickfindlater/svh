@@ -1,12 +1,19 @@
 // -- Mixins for SVH -- //
 
+// ADDS A BROWSER PREFIX TO THE PROPERTY
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+
+}
+
 // Curving stuff
 
 @mixin border-radius($radius) {
-    -webkit-border-radius:  $radius;
-    -moz-border-radius:     $radius;
-    -ms-border-radius:      $radius;
-    border-radius:          $radius;
+    @include css3-prefix('border-radius', $radius);
 }
 
 // Transforming stuff
@@ -69,4 +76,19 @@
     -o-transition-delay:      $delay;
     -webkit-transition-delay: $delay;
     transition-delay:         $delay;
+}
+
+/// --- Add-ons from https://raw.githubusercontent.com/matthieua/sass-css3-mixins/master/css3-mixins.sass
+
+
+@mixin column-count ($count) {
+    @include css3-prefix('column-count', $count);
+}
+
+@mixin column-rule ($rule) {
+    @include css3-prefix('column-rule', $rule);
+}
+
+@mixin column-gap ($gap) {
+    @include css3-prefix('column-gap', $gap);
 }

@@ -21,6 +21,14 @@
             padding-top: $row-standard-padding;
         }
     }
+
+    &.row-standard-padding-bottom {
+        padding-bottom: $row-standard-padding;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            padding-bottom: $row-standard-padding / 2;
+        }
+    }
 }
 
 .block-alt-color {

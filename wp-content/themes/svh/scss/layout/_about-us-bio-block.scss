@@ -1,5 +1,9 @@
 /// --- Block that houses the profiles of the surgeons --- ///
 
+.about-us-bio-block {
+    background-color: $white;
+}
+
 .about-us-bio {
     border-bottom: 1px solid $secondary-color-lighter-accent;
     padding-top: $about-us-bio-blocks-standard-gap;
