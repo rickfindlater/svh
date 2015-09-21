@@ -1,5 +1,9 @@
 // -- Custom type settings for SVH -- //
 
+a {
+    @include transition(all 0.3s ease-in-out);
+}
+
 // Big link that mimics a Heading 4 but is an actual link
 .uber-link {
     font-weight: $font-weight-ultra-bold;

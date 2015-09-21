@@ -18,7 +18,7 @@
 			<img src="<?php bloginfo('template_directory');?>/assets/img/fracs_logo19092015.png" alt="Fracs logo">
 		</div>
 	</div>
-	<div class="row">
+	<div>
 		<?php do_action( 'foundationpress_before_footer' ); ?>
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>
 		<?php do_action( 'foundationpress_after_footer' ); ?>
