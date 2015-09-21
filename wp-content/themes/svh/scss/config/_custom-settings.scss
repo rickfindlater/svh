@@ -181,8 +181,9 @@ $input-focus-bg-color: 			$ghost !default;
 
 // Footer
 
-$footer-bg-color:               		$primary-color;
-$footer-bg-color-lightest:      		saturate(lighten($footer-bg-color,30%),20%);
+$footer-bg-color:               	$primary-color;
+$footer-bg-color-lightest:      	saturate(lighten($footer-bg-color,30%),20%);
+$footer-bg-color-dark:      		desaturate(darken($footer-bg-color,8%),0%);
 
 $footer-newsletter-placeholder-color:	$primary-color;
 

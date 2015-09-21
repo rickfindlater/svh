@@ -7,4 +7,59 @@
 
 footer {
 	background-color: $footer-bg-color;
+
+	.fracs-logo {
+		border-top: 1px solid $footer-bg-color-dark;
+
+		img {
+			margin: 30px auto 0;
+			display: block;
+		}
+	}
+
+	.row-standard-padding {
+		padding-top: $row-standard-padding / 2;
+		padding-bottom: $row-standard-padding / 2;
+	}
+
+	.menu-main-navigation-container {
+
+		ul {
+			list-style: none;
+			text-align: center;
+			margin: 0;
+
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 30px;
+			font-size: $h5-font-size;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			@media screen and (max-width: $medium-breakpoint) and (min-width: $small-breakpoint) {
+				font-size: $h6-font-size;
+			}
+
+			@media screen and (max-width: $small-breakpoint) {
+				display: block;
+				margin: 20px 0 0;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		a {
+			color: $footer-bg-color-lightest;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
 }
