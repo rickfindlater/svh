@@ -94,6 +94,18 @@ get_header(); ?>
 
 	</div>
 </div>
+
 <!-- Start triple quote block -->
+<div class="full-width-image-block full-width-image-block-centered-cta">
+	<img src="http://placehold.it/1400x700">
+	<div class="row">
+		<div class="large-10 large-centered columns">
+			<h2><?php the_title(145); ?></h2>
+			<p class="lead"><?php the_field( 'description', 145 ); ?></p>
+			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 145 ); ?>"><?php the_field( 'button_cta_text', 145 ); ?></a>
+			<p class="cta-phone-number"><?php the_field( 'text_cta', 145 ); ?></p>
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>

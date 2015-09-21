@@ -135,6 +135,35 @@ function post_fw_imgblk() {
 }
 add_action( 'init', 'post_fw_imgblk' );
 
+//**** Full width image block with call to action ****
+
+function post_fw_imgblk_CTA() {
+	$labels = array(
+		'name'               => _x( 'Full width image block CTA', 'post type general name' ),
+		'singular_name'      => _x( 'Full width image block CTA', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Full width image block CTA' ),
+		'edit_item'          => __( 'Edit Full width image block CTA' ),
+		'new_item'           => __( 'New Full width image block CTA' ),
+		'all_items'          => __( 'All Full width image block CTAs' ),
+		'view_item'          => __( 'View Full width image block CTA' ),
+		'search_items'       => __( 'Search Full width image block CTA' ),
+		'not_found'          => __( 'No Full width image block CTA found' ),
+		'not_found_in_trash' => __( 'No Full width image block CTA found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Full width image block CTA'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Full width image block with a centered call to action',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'fw_imgblk_CTA', $args );
+}
+add_action( 'init', 'post_fw_imgblk_CTA' );
+
 //**** Video block ****
 
 function post_video() {
