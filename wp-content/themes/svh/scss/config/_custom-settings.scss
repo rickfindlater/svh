@@ -50,6 +50,7 @@ $warning-color: 				#f08a24;
 $info-color: 					#a0d3e8;
 $steel:                         #AFB2BA;
 $charcoal:                      #555555;
+$muted-color:					$jumbo;
 
 
 // Light Accents
@@ -101,6 +102,9 @@ $row-standard-padding:          60px !default;
 
 $global-radius: 					6px !default;
 $global-radius-small:               4px !default;
+
+$padding-vertical-base:             10px !default;
+$padding-horizontal-base:           12px !default;
 
 // Headings, type etc
 
@@ -213,5 +217,10 @@ $flex-video-margin-bottom: 		0 !default;
 $about-us-bio-blocks-standard-gap:  40px;
 
 
+// Blog page
+
+
+
 // Last because it gets its variable from another bit
 $body-bg: 						$footer-bg-color-dark;
+
