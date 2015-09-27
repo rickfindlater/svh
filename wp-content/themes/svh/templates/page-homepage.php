@@ -38,16 +38,16 @@ get_header(); ?>
 </div>
 <!-- Start full width image block -->
 <div class="full-width-image-block full-width-image-block-bottom-cta">
-    <img src="<?php the_field( 'background_image', 70 ); ?>" alt="The team">
+    <img src="<?php the_field( 'background_image', 159 ); ?>" alt="The team">
 	<div class="row">
 		<div class="large-8 large-centered columns">
-	    <h2><?php the_field( 'header', 70 ); ?></h2>
-		<p class="lead"><?php the_field( 'description', 70 ); ?></p>
-		<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'link', 70 ); ?>">Find out about us</a>
+	    <h2><?php the_field( 'header', 159 ); ?></h2>
+		<p class="lead"><?php the_field( 'description', 159 ); ?></p>
+		<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 159 ); ?>"><?php the_field( 'button_cta_text', 159 ); ?></a>
 	    </div>
 	</div>
 	<?php if ( is_user_logged_in() ) { ?>
-		<a class="post-edit" href="<?php echo get_edit_post_link( 70, $context ); ?>">Edit this</a>
+		<a class="post-edit" href="<?php echo get_edit_post_link( 159, $context ); ?>">Edit this</a>
 	<?php } ?>
 </div>
 
