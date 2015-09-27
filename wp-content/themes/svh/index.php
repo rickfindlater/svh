@@ -17,18 +17,21 @@
 get_header(); ?>
 
 <!--begin blog header-->
+<div class="full-width-image-block full-width-image-block-newsletter">
+	<?php the_field( 'header', 160 ); ?>
+	<img src="<?php the_field( 'background_image', 160 ); ?>" />
+	<div class="row row-standard-padding">
+		<div class="medium-8 medium-centered columns">
+			<h2>Welcome to our blog</h2>
+		</div>
+		<!-- newsletter subscription form -->
+		<?php echo do_shortcode( '[mc4wp_form]' ); ?>
 
-<?php the_field( 'header', 160 ); ?>
-
-<img src="<?php the_field( 'background_image', 160 ); ?>" />
-
-<!-- newsletter subscription form -->
-<?php echo do_shortcode( '[mc4wp_form]' ); ?>
-
-<?php if ( is_user_logged_in() ) { ?>
-	<a class="post-edit" href="<?php echo get_edit_post_link( 67, $context ); ?>">Edit this</a>
-<?php } ?>
-
+		<?php if ( is_user_logged_in() ) { ?>
+			<a class="post-edit" href="<?php echo get_edit_post_link( 67, $context ); ?>">Edit this</a>
+		<?php } ?>
+	</div>
+</div>
 <!--end blog header-->
 
 <div class="row">

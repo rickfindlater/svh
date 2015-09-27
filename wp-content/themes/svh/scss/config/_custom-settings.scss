@@ -75,13 +75,11 @@ $anchor-font-color:             $primary-color;
 
 // We use these to control various global styles
 
-$body-bg: $white;
+$body-bg:                       $white;
 $body-font-color: 				$charcoal;
 $body-font-family: 				$font-family-sans-serif;
 $body-font-weight: 				$font-weight-normal;
 $body-font-style: 				normal;
-$header-font-weight: 			400;
-$header-text-rendering:			optimizeLegibility;
 $topbar-link-weight: 			bold;
 
 // Media query breakpoints
@@ -97,6 +95,7 @@ $xlarge-breakpoint: 			em-calc(1920);
 
 $row-width:                     rem-calc(1100) !default;
 $row-standard-padding:          60px !default;
+$column-gutter:                 rem-calc(30) !default;
 
 // Basic style rules 
 
@@ -116,6 +115,8 @@ $h5-font-size: 						rem-calc(22) !default;
 $h6-font-size: 						1.1rem !default;
 
 $header-font-weight: 				$font-weight-bold;
+$header-font-color:                 $body-font-color !default;
+$header-text-rendering:			    optimizeLegibility;
 
 $header-bottom-margin:              1rem !default;
 $header-line-height: 				1.1 !default;
@@ -190,6 +191,7 @@ $input-border-radius:           $global-radius-small !default;
 $input-border-color:            scale-color($white, $lightness: -15%) !default;
 $input-focus-border-color:      $primary-color-lighter-accent !default;
 $input-focus-bg-color: 			$ghost !default;
+$input-placeholder-color:       $iron !default;
 
 
 // Footer
@@ -236,7 +238,7 @@ $about-us-bio-blocks-standard-gap:  40px;
 
 // Blog page
 
-
+$blog-widget-gap:               $column-gutter;
 
 // Last because it gets its variable from another bit
 $body-bg: 						$footer-bg-color-dark;
