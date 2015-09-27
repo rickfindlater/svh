@@ -81,4 +81,57 @@
             }
         }
     }
+
+    // Block that has a newsletter sign up in it, overrides the one in the footer
+    &.full-width-image-block-newsletter {
+        margin-bottom: $row-standard-padding;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            margin-bottom: $row-standard-padding / 2;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .newsletter-heading {
+            color: $white;
+        }
+
+        .newsletter-form {
+
+            @media screen and (max-width: $medium-breakpoint) {
+                padding-left: $column-gutter / 2;
+                padding-right: $column-gutter / 2;
+            }
+
+            .button.postfix {
+                margin-top: 0;
+            }
+
+            .newsletter-email-input {
+                background-color: $white;
+                border-color: $input-border-color;
+            }
+
+            .button {
+                @include button-style;
+            }
+
+            ::-webkit-input-placeholder { // WebKit, Blink, Edge
+                color:    $input-placeholder-color;
+            }
+            :-moz-placeholder { // Mozilla Firefox 4 to 18
+                color:    $input-placeholder-color;
+                opacity:  1;
+            }
+            ::-moz-placeholder { // Mozilla Firefox 19+
+                color:    $input-placeholder-color;
+                opacity:  1;
+            }
+            :-ms-input-placeholder { // Internet Explorer 10-11
+                color:    $input-placeholder-color;
+            }
+        }
+    }
 }
