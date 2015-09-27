@@ -280,4 +280,33 @@ function post_faq_item() {
 }
 add_action( 'init', 'post_faq_item' );
 
+//**** Map block ****
+
+function post_map_block() {
+	$labels = array(
+		'name'               => _x( 'Map block', 'post type general name' ),
+		'singular_name'      => _x( 'Map block', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new Map block' ),
+		'edit_item'          => __( 'Edit Map block' ),
+		'new_item'           => __( 'New Map block' ),
+		'all_items'          => __( 'All Map blocks' ),
+		'view_item'          => __( 'View Map block' ),
+		'search_items'       => __( 'Search Map block' ),
+		'not_found'          => __( 'No Map block found' ),
+		'not_found_in_trash' => __( 'No Map block found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Map block'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a Map block',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'map_block', $args );
+}
+add_action( 'init', 'post_map_block' );
+
 ?>

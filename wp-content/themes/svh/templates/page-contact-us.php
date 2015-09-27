@@ -6,15 +6,33 @@ Description: Only used for the site homepage
 
 get_header(); ?>
 
-<p><img src="<?php the_field( 'background_image'); ?>"/></p>
+<?php
+$args = array(
+	'post_type' => 'map_block',
+	'order' => ASC,
+);
+$map_block = new WP_Query( $args );
 
-<p><?php the_field( 'contact_title'); ?></p>
+if( $map_block->have_posts() ) {
+	while( $map_block->have_posts() ) {
+		$map_block->the_post();
+		?>
 
-<p><a href="mailto:<?php the_field( 'email'); ?>"><?php the_field( 'email'); ?></a></p>
+		<?php the_field( 'address'); ?>
 
-<p><?php the_field( 'phone_number'); ?></p>
+		<a href="mailto:<?php the_field( 'email'); ?>"><?php the_field( 'email'); ?></a>
 
-<p><?php the_field( 'contact_form'); ?></p>
+		<?php the_field( 'phone_number'); ?>
+
+		<?php the_field( 'map_link'); ?>
+
+		<?php if ( is_user_logged_in() ) { ?>
+			<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
+		<?php } ?>
+		<?php
+	}
+}
+?>
 
 <!-- Start contact form -->
 <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
