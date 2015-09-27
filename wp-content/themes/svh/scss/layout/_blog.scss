@@ -5,32 +5,8 @@ body.blog, body.single-post {
         padding-top: $row-standard-padding;
     }
 
-    .blog-header {
-        font-weight: $font-weight-light;
-        margin-bottom: 10px;
-
-        p {
-            display: inline;
-            margin-left: 5px;
-            font-weight: $font-weight-light;
-        }
-    }
-
-    .blog-title {
-        margin-top: 10px;
-    }
-
-    .read-more {
-        margin-bottom: 0;
-    }
-
-    .blog-divider {
-        margin: 30px 0;
-        border-color: $secondary-color-light-accent;
-    }
-
-    #sidebar {
-        margin-top: 34px;
+    .wp-post-image {
+        margin-bottom: 20px;
     }
 
     .widget_search {
@@ -41,6 +17,7 @@ body.blog, body.single-post {
 
         @media screen and (max-width: $medium-breakpoint) {
             background-color: $white;
+            padding-top: 0;
         }
 
         .small-8 {
@@ -93,6 +70,71 @@ body.blog, body.single-post {
                 border-bottom: none;
             }
         }
+    }
 
+    .blog-header {
+        font-weight: $font-weight-light;
+        margin-bottom: 30px;
+
+        p {
+            display: inline;
+            margin-left: 5px;
+            font-weight: $font-weight-light;
+
+            @media screen and (max-width: $medium-breakpoint) {
+                display: block;
+                margin-left: 0;
+            }
+        }
+    }
+
+
+    .author {
+       color: $body-font-color;
+
+        p {
+            color: $body-font-color;
+        }
+    }
+}
+
+// Styles specific to the blog aggregate page
+body.blog {
+
+    .blog-title {
+        margin-bottom: 5px;
+        font-weight: $font-weight-normal;
+    }
+
+    .read-more {
+        margin-bottom: 0;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            width: 100%;
+        }
+    }
+
+    .blog-divider {
+        margin: 30px 0;
+        border-color: $secondary-color-light-accent;
+    }
+}
+
+// Styles specific to the a single blog post page
+body.single-post {
+
+    .blog-header {
+        font-weight: $font-weight-light;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: $h2-font-size;
+            font-weight: $font-weight-normal;
+            margin-bottom: 4px;
+
+            @media screen and (max-width: $medium-breakpoint) {
+                font-size: $h3-font-size;
+            }
+        }
     }
 }

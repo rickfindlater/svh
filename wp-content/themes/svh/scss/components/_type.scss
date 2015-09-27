@@ -33,3 +33,19 @@ a {
 p.lead {
     line-height: $lead-line-height;
 }
+
+.h1 {
+    font-size: $h1-font-size;
+}
+
+.h2 {
+    font-size: $h2-font-size;
+}
+
+blockquote {
+
+    p {
+        font-size: $blockquote-font-size;
+        margin: 0;
+    }
+}
