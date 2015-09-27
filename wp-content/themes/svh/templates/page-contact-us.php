@@ -20,4 +20,8 @@ get_header(); ?>
 <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
 <!-- Start contact form -->
 
+<!-- Start newsletter subscription form -->
+<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+<!-- End newsletter subscription form -->
+
 <?php get_footer(); ?>
