@@ -13,12 +13,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="blog-header text-muted">
+		<h3 class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<?php foundationpress_entry_meta(); ?>
 	</header>
 	<div class="entry-content">
 		<!-- The post featured image -->
 		<?php the_post_thumbnail( $size, $attr ); ?>
-		<h3 class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<!-- The post excerpt -->
 		<?php the_excerpt(); ?>
 		<!-- Read more button -->

@@ -132,6 +132,12 @@ $testimonial-quote-font-size-small: rem-calc(18) !default;
 $testimonial-quote-font-size:		$h5-font-size !default;
 $testimonial-quote-font-size-lg:	$h4-font-size !default;
 
+// We use these to style blockquotes
+
+
+$blockquote-border:                 3px solid $primary-color !default;
+$blockquote-font-size:              $testimonial-quote-font-size !default;
+$blockquote-padding:                rem-calc(9 20 9 19) !default;
 
 // Buttons
 
@@ -195,6 +201,17 @@ $footer-bg-color-dark:      		desaturate(darken($footer-bg-color,8%),0%);
 
 $footer-newsletter-placeholder-color:	$primary-color;
 
+// Image thumnnails
+
+//$thumb-border-style: solid !default;
+$thumb-border-width:                2px !default;
+$thumb-border-color:                $white !default;
+$thumb-box-shadow:                  0 0 0 1px $secondary-color-lighter-accent !default;
+$thumb-box-shadow-hover:            0 0 0 1px $secondary-color-lighter-accent !default;
+
+// Radius and transition speed for thumbs
+$thumb-radius:                      $global-radius !default;
+$thumb-transition-speed:            200ms !default;
 
 // Teaser block
 
