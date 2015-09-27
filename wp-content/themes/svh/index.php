@@ -16,6 +16,21 @@
 
 get_header(); ?>
 
+<!--begin blog header-->
+
+<?php the_field( 'header', 160 ); ?>
+
+<img src="<?php the_field( 'background_image', 160 ); ?>" />
+
+<!-- newsletter subscription form -->
+<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+
+<?php if ( is_user_logged_in() ) { ?>
+	<a class="post-edit" href="<?php echo get_edit_post_link( 67, $context ); ?>">Edit this</a>
+<?php } ?>
+
+<!--end blog header-->
+
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
