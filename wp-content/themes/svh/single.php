@@ -34,10 +34,16 @@ get_header(); ?>
 			</div>
 
 			<!-- Next and prev blog links-->
-			<p>
-				<?php previous_post_link(); ?>
-				<?php next_post_link(); ?>
-			</p>
+			<div class="row prev-next-links">
+				<div class="medium-6 columns prev-next-link prev-link">
+					<p class="prev-next-header"><i class="btl bt-angle-left"></i>Previous post</p>
+					<p class="lead prev-next-title"><?php previous_post_link(); ?></p>
+				</div>
+				<div class="medium-6 columns prev-next-link next-link">
+					<p class="prev-next-header">Next post<i class="btl bt-angle-right"></i></p>
+					<p class="lead prev-next-title"><?php next_post_link(); ?></p>
+				</div>
+			</div>
 
 			<footer>
 				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>

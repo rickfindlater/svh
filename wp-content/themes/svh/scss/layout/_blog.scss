@@ -4,6 +4,14 @@ body.blog, body.single-post {
         background-color: $white;
     }
 
+    #sidebar {
+        padding-left: $column-gutter;
+
+        @media screen and (max-width: $medium-breakpoint) {
+            padding-left: $column-gutter / 2;
+        }
+    }
+
     .wp-post-image {
         margin-bottom: 20px;
     }
@@ -99,6 +107,10 @@ body.blog, body.single-post {
             font-size: $h6-font-size;
         }
 
+        .conditional-hide {
+            display: none;
+        }
+
         .newsletter-email-input {
             background-color: $white;
             border-color: $input-border-color;
@@ -175,7 +187,7 @@ body.blog, body.single-post {
 body.blog {
 
     .blog-title {
-        margin-bottom: 5px;
+        margin-top: 7px;
         font-weight: $font-weight-normal;
     }
 
@@ -213,5 +225,41 @@ body.single-post {
                 font-size: $h3-font-size;
             }
         }
+    }
+
+    .prev-next-links {
+        border-top: 1px solid $primary-color;
+        border-bottom: 3px solid $primary-color;
+        margin-bottom: $row-standard-padding;
+    }
+
+    .prev-next-link {
+        padding-top: $column-gutter;
+        padding-bottom: $column-gutter;
+    }
+
+    .prev-next-header {
+        text-transform: uppercase;
+        font-weight: $font-weight-ultra-bold;
+        color: $muted-color;
+        margin-bottom: 5px;
+
+        .bt-angle-left {
+            margin-right: 5px;
+        }
+
+        .bt-angle-right {
+            margin-left: 3px;
+        }
+    }
+
+    .prev-next-title {
+        margin-bottom: 0;
+        color: white;
+    }
+
+    .prev-link {
+        border-right: 1px solid $vapor;
+
     }
 }

@@ -95,6 +95,7 @@ $xlarge-breakpoint: 			em-calc(1920);
 
 $row-width:                     rem-calc(1100) !default;
 $row-standard-padding:          60px !default;
+$column-gutter:                 rem-calc(30) !default;
 
 // Basic style rules 
 
@@ -237,7 +238,7 @@ $about-us-bio-blocks-standard-gap:  40px;
 
 // Blog page
 
-$blog-widget-gap:               25px;
+$blog-widget-gap:               $column-gutter;
 
 // Last because it gets its variable from another bit
 $body-bg: 						$footer-bg-color-dark;
