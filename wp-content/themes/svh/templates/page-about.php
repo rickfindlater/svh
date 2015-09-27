@@ -29,11 +29,11 @@ get_header(); ?>
 				'post_type' => 'about_person',
 				'order' => ASC,
 			);
-			$teasers = new WP_Query( $args );
+			$about_person = new WP_Query( $args );
 
-			if( $teasers->have_posts() ) {
-				while( $teasers->have_posts() ) {
-					$teasers->the_post();
+			if( $about_person->have_posts() ) {
+				while( $about_person->have_posts() ) {
+					$about_person->the_post();
 					?>
 					<!--Start of bio 1-->
 					<div class="row about-us-bio">
@@ -45,7 +45,7 @@ get_header(); ?>
 						<div class="medium-9 small-12 columns">
 							<h3 class="about-us-bio-name"><?php the_field( 'name'); ?></h3>
 							<h6 class="subheader"><?php the_field( 'sub_name'); ?></h6>
-							<?php the_field( 'bio', 114 ); ?>
+							<?php the_field( 'bio'); ?>
 						</div>
 						<?php if ( is_user_logged_in() ) { ?>
 							<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
@@ -70,11 +70,11 @@ get_header(); ?>
 			'post_type' => 'three_quote',
 			'order' => ASC,
 		);
-		$teasers = new WP_Query( $args );
+		$three_quote = new WP_Query( $args );
 
-		if( $teasers->have_posts() ) {
-			while( $teasers->have_posts() ) {
-				$teasers->the_post();
+		if( $three_quote->have_posts() ) {
+			while( $three_quote->have_posts() ) {
+				$three_quote->the_post();
 				?>
 				<!--Start of bio 1-->
 				<div class="medium-4 columns text-center">

@@ -251,4 +251,33 @@ function post_about_person() {
 }
 add_action( 'init', 'post_about_person' );
 
+//**** faq item ****
+
+function post_faq_item() {
+	$labels = array(
+		'name'               => _x( 'FAQ Item', 'post type general name' ),
+		'singular_name'      => _x( 'FAQ Item', 'post type singular name' ),
+		'add_new_item'       => __( 'Add new FAQ Item' ),
+		'edit_item'          => __( 'Edit FAQ Item' ),
+		'new_item'           => __( 'New FAQ Item' ),
+		'all_items'          => __( 'All FAQ Items' ),
+		'view_item'          => __( 'View FAQ Item' ),
+		'search_items'       => __( 'Search FAQ Item' ),
+		'not_found'          => __( 'No FAQ Item found' ),
+		'not_found_in_trash' => __( 'No FAQ Item found in the Trash' ),
+		'parent_item_colon'  => '',
+		'menu_name'          => 'FAQ Item'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'The specific content type for a FAQ Item',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'thumbnail' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'faq_item', $args );
+}
+add_action( 'init', 'post_faq_item' );
+
 ?>
