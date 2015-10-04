@@ -45,6 +45,12 @@ require_once( 'library/theme-support.php' );
 /** Add Header image */
 require_once( 'library/custom-header.php' );
 
+//Add maps style sheet
+function svh_scripts() {
+	wp_enqueue_script( 'maps', get_template_directory_uri() . '/js/custom/maps.js', array(), '1.0.0', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'svh_scripts' );
 
 //Custom post types
 
