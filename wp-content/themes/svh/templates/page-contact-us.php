@@ -46,17 +46,21 @@ if( $map_block->have_posts() ) {
 				<div class="row">
 					<div class="large-4 medium-6 columns">
 						<div class="contact-location-panel">
-							<h4 class="location-title">Location title</h4>
+							<h5 class="location-title">Location title</h5>
 							<!--start contact details-->
-							<div class="contact-address">
+							<div class="contact-section">
 								<i class="btl bt-map bt-lg text-primary location-panel-icon"></i>
 								<?php the_field( 'address'); ?>
 							</div>
-							<div class="contact-details">
+							<div class="contact-section">
+								<i class="btl bt-envelope bt-lg text-primary location-panel-icon"></i>
 								<a href="mailto:<?php the_field( 'email'); ?>"><?php the_field( 'email'); ?></a>
+							</div>
+							<div class="contact-section">
+								<i class="btl bt-phone bt-lg text-primary location-panel-icon"></i>
 								<p><?php the_field( 'phone_number'); ?></p>
 								<!--end contact detals-->
-							</div>
+							</div>	
 						</div>
 					</div>	
 				</div>
@@ -70,10 +74,20 @@ if( $map_block->have_posts() ) {
 	}
 }
 ?>
-
 <!-- Start contact form -->
-<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
-<!-- Start contact form -->
+<div>
+	<div class="row row-half-padding">
+		<div class="medium-6 medium-centered columns">
+			<div class="text-center">
+				<h3>Get in touch</h3>
+				<p>Let us know your details and we‘ll contact you within one working day.</p>
+			</div>
+			<!-- Start contact form -->
+			<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+			<!-- Start contact form -->
+		</div>
+	</div>
+</div>
 
 <!-- Start newsletter subscription form -->
 <?php echo do_shortcode( '[mc4wp_form]' ); ?>

@@ -3,7 +3,7 @@
 
     .acf-map {
         height: $contact-us-map-height;
-        margin-top: 0;
+        margin: 0;
         border: $white;
     }
 
@@ -14,6 +14,11 @@
 
 .contact-location-wrapper {
     position: relative;
+    margin-bottom: $row-standard-padding;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .contact-location-details {
@@ -26,20 +31,26 @@
 }
 
 .contact-location-panel {
+    margin-top: 60px;
     background-color: $contact-panel-bg;
     padding: ($padding-vertical-base * 2) ($padding-horizontal-base * 2);
     @include box-shadow (0, 0, 30px, rgba($black,0.15));
 
     .location-title {
-        margin-top: center;
+        margin-top: 0;
         text-align: center;
     }
 
-    .contact-address {
-        padding-left: ($padding-vertical-base * 2);
+    .contact-section {
+        padding-left: $contact-address-padding-left;
         position: relative;
+        margin-bottom: 10px;
 
-        lo
+        .location-panel-icon {
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
 
         p {
             margin: 0;
