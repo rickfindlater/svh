@@ -31,26 +31,37 @@ if( $map_block->have_posts() ) {
 	while( $map_block->have_posts() ) {
 		$map_block->the_post();
 		?>
-
-		<!--start contact details-->
-		<p><?php the_field( 'address'); ?></p>
-
-		<a href="mailto:<?php the_field( 'email'); ?>"><?php the_field( 'email'); ?></a>
-
-		<p><?php the_field( 'phone_number'); ?></p>
-		<!--end contact detals-->
-
-		<!--start google map-->
-		<?php
-		$location = get_field('map_link');
-		if( !empty($location) ):
-			?>
-			<div class="acf-map">
-				<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-			</div>
-		<?php endif; ?>
-		<!--end google map-->
-
+		<div class="contact-location-wrapper">
+			<!--start google map-->
+			<?php
+			$location = get_field('map_link');
+			if( !empty($location) ):
+				?>
+				<div class="acf-map">
+					<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+				</div>
+			<?php endif; ?>
+			<!--end google map-->
+			<div class="contact-location-details">
+				<div class="row">
+					<div class="large-4 medium-6 columns">
+						<div class="contact-location-panel">
+							<h4 class="location-title">Location title</h4>
+							<!--start contact details-->
+							<div class="contact-address">
+								<i class="btl bt-map bt-lg text-primary location-panel-icon"></i>
+								<?php the_field( 'address'); ?>
+							</div>
+							<div class="contact-details">
+								<a href="mailto:<?php the_field( 'email'); ?>"><?php the_field( 'email'); ?></a>
+								<p><?php the_field( 'phone_number'); ?></p>
+								<!--end contact detals-->
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>				
+		</div>
 		<!--edit link-->
 		<?php if ( is_user_logged_in() ) { ?>
 			<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
