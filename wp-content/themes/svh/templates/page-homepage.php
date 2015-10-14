@@ -5,6 +5,11 @@ Description: Only used for the site homepage
 */
 
 get_header(); ?>
+
+<div class="hp-hero">
+
+</div>
+
 <div class="teaser-blocks">
 		<div class="row row-standard-padding" role="main">
 
