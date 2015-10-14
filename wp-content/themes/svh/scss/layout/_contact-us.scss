@@ -1,0 +1,59 @@
+.page-template-page-contact-us {
+    background-color: $white;
+
+    .acf-map {
+        height: $contact-us-map-height;
+        margin: 0;
+        border: $white;
+    }
+
+    .gmnoprint {
+        display: none !important;
+    }
+}
+
+.contact-location-wrapper {
+    position: relative;
+    margin-bottom: $row-standard-padding;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact-location-details {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: $contact-us-map-height;
+    width: 100%;
+}
+
+.contact-location-panel {
+    margin-top: 60px;
+    background-color: $contact-panel-bg;
+    padding: ($padding-vertical-base * 2) ($padding-horizontal-base * 2);
+    @include box-shadow (0, 0, 30px, rgba($black,0.15));
+
+    .location-title {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .contact-section {
+        padding-left: $contact-address-padding-left;
+        position: relative;
+        margin-bottom: 10px;
+
+        .location-panel-icon {
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
