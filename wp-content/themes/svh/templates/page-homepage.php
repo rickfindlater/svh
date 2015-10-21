@@ -7,7 +7,13 @@ Description: Only used for the site homepage
 get_header(); ?>
 
 <div class="hp-hero">
-
+	<script>
+		$(function() {
+			var BV = new $.BigVideo();
+			BV.init();
+			BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
+		});
+	</script>
 </div>
 
 <div class="teaser-blocks">
