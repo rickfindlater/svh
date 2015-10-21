@@ -11,7 +11,7 @@ get_header(); ?>
 		$(function() {
 			var BV = new $.BigVideo();
 			BV.init();
-			BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
+			BV.show('https://player.vimeo.com/external/142859792.sd.mp4?s=1a607e25ffbc93625be06bc9302109c4&profile_id=112',{ambient:true});
 		});
 	</script>
 </div>
