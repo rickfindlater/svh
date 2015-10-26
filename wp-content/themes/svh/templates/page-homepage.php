@@ -11,9 +11,30 @@ get_header(); ?>
 		$(function() {
 			var BV = new $.BigVideo();
 			BV.init();
-			BV.show('https://player.vimeo.com/external/142859792.sd.mp4?s=1a607e25ffbc93625be06bc9302109c4&profile_id=112',{ambient:true});
+			if (Modernizr.touch) {
+				//background image for mobile devices goes here
+				BV.show('video-poster.jpg');
+			} else {
+				BV.show('https://player.vimeo.com/external/142859789.sd.mp4?s=74321aa6204b13c6b4c243bc45cea0db&profile_id=112',{ambient:true});
+			}
+
+			$( "#video-play-button" ).click(function() {
+				BV.getPlayer().pause();
+			});
+
+			//BV.getPlayer().play();
 		});
+
 	</script>
+	<button id="video-play-button" data-reveal-id="videoModal" class="radius button">PLAY VIDEO</button>
+
+	<div id="videoModal" class="reveal-modal large" data-reveal="" aria-hidden="true" style="opacity: 1; visibility: hidden; display: none;">
+		<h2>This modal has video</h2>
+		<div class="flex-video" style="display: none;">
+			<iframe width="300" height="300" src="https://www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen="" data-src="https://www.youtube.com/embed/aiBt44rrslw"></iframe>
+		</div>
+		<a class="close-reveal-modal">×</a>
+	</div>
 </div>
 
 <div class="teaser-blocks">

@@ -6,7 +6,7 @@ RewriteBase /~rick/svh/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /~jamesfindlater/svh/index.php [L]
+RewriteRule . /~rickfindlater/svh/index.php [L]
 </IfModule>
 
 # END WordPress

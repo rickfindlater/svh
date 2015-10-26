@@ -10,3 +10,24 @@
 .top-bar-section ul li>a {
     font-weight: $font-weight-normal;
 }
+
+// make the top bar fixed
+.top-bar-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: white;
+	z-index: 100;
+}
+
+// and add top padding to the body cover the top bax being fixed
+body {
+	padding-top: 80px;
+}
+
+// but not on the homepage due to large video
+body.home.page {
+	padding-top: 0;
+}
+
