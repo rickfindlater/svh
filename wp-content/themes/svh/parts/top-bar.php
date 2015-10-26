@@ -16,7 +16,7 @@
             </li>
             <li class="top-bar-logo">
                 <a href="<?php echo home_url(); ?>">
-                    <img src="<?php bloginfo('template_directory');?>/wp-content/themes/svh/assets/img/svh_main_logo02092015.png" alt="SVH Logo">
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/svh_main_logo02092015.png" alt="SVH Logo">
                 </a>
             </li>
         </ul>
