@@ -74,8 +74,7 @@ get_header(); ?>
 	</div>
 </div>
 <!-- Start full width image block -->
-<div class="full-width-image-block full-width-image-block-bottom-cta">
-    <img src="<?php the_field( 'background_image', 159 ); ?>" alt="The team">
+<div class="full-width-image-block full-width-image-block-bottom-cta" data-parallax="scroll" data-image-src="<?php the_field( 'background_image', 159 ); ?>">
 	<div class="row">
 		<div class="large-8 large-centered columns">
 	    <h2><?php the_field( 'header', 159 ); ?></h2>
@@ -134,6 +133,13 @@ get_header(); ?>
 </div>
 
 <!-- End contact form -->
+
+<!-- Start blog carousel -->
+<div class="row row-standard-padding">
+	<?php echo do_shortcode('[carousel-horizontal-posts-content-slider]'); ?>
+</div>
+
+<!-- end blog carousel -->
 
 <!-- Start newsletter subscription form -->
 <?php echo do_shortcode( '[mc4wp_form]' ); ?>
