@@ -6,7 +6,7 @@ Description: Only used for the site homepage
 
 get_header(); ?>
 
-<div class="hp-hero">
+<div class="full-width-image-block hp-hero">
 	<script>
 		$(function() {
 			var BV = new $.BigVideo();
@@ -41,6 +41,7 @@ get_header(); ?>
 		<a class="close-reveal-modal">×</a>
 	</div>
 </div>
+
 
 <div class="teaser-blocks">
 		<div class="row row-standard-padding" role="main">
