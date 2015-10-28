@@ -32,8 +32,24 @@ get_header(); ?>
 		});
 
 	</script>
-	<button id="video-play-button" data-reveal-id="videoModal" class="radius button">PLAY VIDEO</button>
-
+	<div class="hp-hero-inner">
+		<div class="row">
+			<div class="large-10 large-centered columns">
+				<h1>Specialist Vein Health empowers people to take control of their health.</h1>
+				<p>We provide advanced and minimally invasive techniques at affordable levels.</p>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="large-5 medium-6 medium-centered columns">
+				<button class="button large primary radius expand button-opacity hp-hero-primary-button">
+					Book a consultation
+				</button>
+				<button id="video-play-button" data-reveal-id="videoModal" class="button radius secondary display-block margin-top-10px expand">
+					Or watch the video
+				</button>
+			</div>	
+		</div>
+	</div>
 	<div id="videoModal" class="reveal-modal large" data-reveal="svhVideo" aria-hidden="true" style="opacity: 1; visibility: hidden; display: none;">
 		<div class="flex-video" style="display: none;">
 
@@ -78,9 +94,9 @@ get_header(); ?>
 <div class="full-width-image-block full-width-image-block-bottom-cta" data-parallax="scroll" data-image-src="<?php the_field( 'background_image', 159 ); ?>">
 	<div class="row">
 		<div class="large-8 large-centered columns">
-	    <h2><?php the_field( 'header', 159 ); ?></h2>
-		<p class="lead"><?php the_field( 'description', 159 ); ?></p>
-		<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 159 ); ?>"><?php the_field( 'button_cta_text', 159 ); ?></a>
+	    	<h2><?php the_field( 'header', 159 ); ?></h2>
+			<p class="lead"><?php the_field( 'description', 159 ); ?></p>
+			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 159 ); ?>"><?php the_field( 'button_cta_text', 159 ); ?></a>
 	    </div>
 	</div>
 	<?php if ( is_user_logged_in() ) { ?>

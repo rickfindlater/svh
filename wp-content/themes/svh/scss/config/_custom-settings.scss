@@ -67,6 +67,8 @@ $secondary-color-lighter-accent:lighten($secondary-color,20%);
 $primary-color-dark-accent:		saturate(darken($primary-color,10%),5%) !default;
 $primary-color-darker-accent:	saturate(darken($primary-color,20%),2%) !default;
 
+$secondary-color-dark-accent:	saturate(darken($secondary-color,10%),5%) !default;
+$secondary-color-darker-accent:	saturate(darken($secondary-color,20%),2%) !default;
 
 // Anchors ///
 
@@ -151,6 +153,8 @@ $button-standard-opacity:       0.8 !default;
 
 $button-dark-primary-bg:		$primary-color-darker-accent !default;
 $button-dark-primary-bg-hover:	$primary-color-dark-accent !default;
+
+$secondary-button-bg-hover:		$secondary-color-dark-accent !default;
 
 // Top bar (the Nav)
 
