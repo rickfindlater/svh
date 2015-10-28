@@ -30,8 +30,6 @@
 
 	&.outline {
 		background-color: transparent;
-		color: $primary-color;
-		border-color:$secondary-color-light-accent;
 	}
 
 	//Button that has a slightly opaque background to go above images
@@ -50,7 +48,16 @@
 		@include transition(all, ease-in-out, 0.3s);
 
 		&:hover, &:active, &:focus {
-			border-color: $secondary-button-bg-hover
+			border-color: $secondary-button-bg-hover;
+		}
+
+		&.outline {
+			color: $primary-color;
+			border-color:$secondary-color-light-accent;
+
+			&:hover, &:active, &:focus {
+				color: $white;
+			}
 		}
 	}
 }
