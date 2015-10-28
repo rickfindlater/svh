@@ -141,7 +141,7 @@ get_header(); ?>
 	<div class="row row-standard-padding">
 		<div class="medium-6 medium-centered columns">
 			<div class="text-center">
-				<h3>Book a consultation now</h3>
+				<h4>Book a consultation now</h4>
 				<p>Let us know your details and we‘ll contact you within one working day.</p>
 			</div>
 			<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
@@ -152,8 +152,17 @@ get_header(); ?>
 <!-- End contact form -->
 
 <!-- Start blog carousel -->
-<div class="row row-standard-padding">
-	<?php echo do_shortcode('[carousel-horizontal-posts-content-slider]'); ?>
+<div class="blog-carousel">
+	<div class="row">
+		<div class="medium-12">
+			<h3>The latest from our health blog</h3>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="medium-12">
+			<?php echo do_shortcode('[carousel-horizontal-posts-content-slider]'); ?>
+		</div>	
+	</div>
 </div>
 
 <!-- end blog carousel -->

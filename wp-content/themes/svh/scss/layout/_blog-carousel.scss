@@ -1,0 +1,68 @@
+/// --- Shows latest posts on the home page --- ////
+
+.blog-carousel {
+    background-color: $white;
+    text-align: center;
+    padding-top: $row-standard-padding;
+    padding-bottom: $row-standard-padding;
+
+    .chpcs_img {
+        @include border-radius($global-radius);
+
+        img {
+            @include border-radius($global-radius);
+        }
+    }
+
+    .chpcs_foo_content {
+        p {
+            margin: 20px 0 0;
+        }
+    }
+
+    .chpcs_image_carousel .chpcs_prev, .chpcs_image_carousel .chpcs_next {
+        font-size: 60px;
+        color: $primary-color;
+
+        &:before {
+            font-family: $font-family-icon-font;
+            @include transition(all, ease-in-out, 0.3s);
+        }
+
+        &:hover {
+
+            &:before {
+                color: $primary-color-dark-accent;
+            }
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .chpcs_image_carousel .chpcs_prev {
+
+        &:before {
+            content: "\F092";
+        }
+
+        &:hover {
+
+            @media screen and (min-width: $small-breakpoint) {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .chpcs_image_carousel .chpcs_next {
+
+        &:before {
+            content: "\F093";
+        }
+
+        @media screen and (min-width: $small-breakpoint) {
+            padding-left: 20px;
+        }
+    }
+}
