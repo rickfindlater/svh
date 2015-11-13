@@ -6,7 +6,7 @@ Description: Only used for the site homepage
 
 get_header(); ?>
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 <style type="text/css">
 
@@ -15,6 +15,11 @@ get_header(); ?>
 		height: 400px;
 		border: #ccc solid 1px;
 		margin: 20px 0;
+	}
+
+	/* fixes potential theme css conflict */
+	.acf-map img {
+		max-width: inherit !important;
 	}
 
 </style>
