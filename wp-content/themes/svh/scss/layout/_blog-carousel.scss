@@ -26,6 +26,7 @@
 
         &:before {
             font-family: $font-family-icon-font;
+            font-weight: $icon-font-reg-weight;
             @include transition(all, ease-in-out, 0.3s);
         }
 
