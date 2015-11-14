@@ -29,5 +29,19 @@ body {
 // but not on the homepage due to large video
 body.home.page {
 	padding-top: 0;
+
+	@media screen and (max-width: $medium-breakpoint) {
+		padding-top: 0 !important;
+	}
 }
 
+.tab-bar-section.middle {
+	background-image: url(../assets/img/svh_sml_logo14112015.png);
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+	background-position-y: 50%;
+
+	h1 {
+		@include squish-text;
+	}
+}

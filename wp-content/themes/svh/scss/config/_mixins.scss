@@ -104,3 +104,9 @@
         box-shadow: $top $left $blur $color;
     }
 }
+
+@mixin squish-text {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+}
