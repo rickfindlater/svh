@@ -13,9 +13,10 @@ get_header(); ?>
 			BV.init();
 			if (Modernizr.touch) {
 				//background image for mobile devices goes here
-				BV.show('video-poster.jpg');
+				BV.show('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/svh_about_hero.jpg');
+				console.log("hi there");
 			} else {
-				BV.show('https://player.vimeo.com/external/142859789.sd.mp4?s=74321aa6204b13c6b4c243bc45cea0db&profile_id=112',{ambient:true});
+				BV.show('https://player.vimeo.com/external/142859792.sd.mp4?s=4c3b1268352d26ca38168fa39f866d1d500c9cbd&profile_id=112',{ambient:true});
 			}
 
 			//when modal is open we pause the background video and add the html of the full video with autoplay
@@ -41,7 +42,7 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="large-5 medium-6 medium-centered columns">
-				<button class="button large primary radius expand button-opacity hp-hero-primary-button">
+				<button id="scroll-contact-form" class="button large primary radius expand button-opacity hp-hero-primary-button">
 					Book a consultation
 				</button>
 				<button id="video-play-button" data-reveal-id="videoModal" class="button radius secondary display-block margin-top-10px expand">
@@ -104,20 +105,20 @@ get_header(); ?>
 	<?php } ?>
 </div>
 
-<!-- Start of embeded video block -->
-<div class="block-alt-color text-center">
-	<div class="row row-standard-padding">
-		<div class="medium-12 columns">
-			<h3><?php the_field( 'title', 81 ); ?></h3>
-			<div class="flex-video widescreen vimeo">
-				<?php the_field( 'video_embed_code', 81 ); ?>
-			</div>
-		</div>
-	</div>
-	<?php if ( is_user_logged_in() ) { ?>
-		<a class="post-edit" href="<?php echo get_edit_post_link( 81, $context ); ?>">Edit this</a>
-	<?php } ?>
-</div>	
+<!--<!-- Start of embeded video block -->-->
+<!--<div class="block-alt-color text-center">-->
+<!--	<div class="row row-standard-padding">-->
+<!--		<div class="medium-12 columns">-->
+<!--			<h3>--><?php //the_field( 'title', 81 ); ?><!--</h3>-->
+<!--			<div class="flex-video widescreen vimeo">-->
+<!--				--><?php //the_field( 'video_embed_code', 81 ); ?>
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	--><?php //if ( is_user_logged_in() ) { ?>
+<!--		<a class="post-edit" href="--><?php //echo get_edit_post_link( 81, $context ); ?><!--">Edit this</a>-->
+<!--	--><?php //} ?>
+<!--</div>	-->
 
 <!-- Start single quote block -->
 <div class="testimonial-x-1-block text-center">
@@ -137,6 +138,7 @@ get_header(); ?>
 </div>
 
 <!-- Start contact form -->
+	<a id="contact-form-anchor"></a>
 <div class="block-alt-color">
 	<div class="row row-standard-padding">
 		<div class="medium-6 medium-centered columns">
