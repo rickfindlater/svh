@@ -13,8 +13,7 @@ get_header(); ?>
 			BV.init();
 			if (Modernizr.touch) {
 				//background image for mobile devices goes here
-				BV.show('<?php echo get_stylesheet_directory_uri(); ?>/assets/img/svh_about_hero.jpg');
-				console.log("hi there");
+				BV.show('video-poster.jpg');
 			} else {
 				BV.show('https://player.vimeo.com/external/142859792.sd.mp4?s=4c3b1268352d26ca38168fa39f866d1d500c9cbd&profile_id=112',{ambient:true});
 			}
