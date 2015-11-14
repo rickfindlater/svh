@@ -60,6 +60,21 @@ get_header(); ?>
 </div>
 <!-- End the bio blocks -->
 
+<!-- Start of embeded video block -->
+<div class="block-alt-color text-center">
+	<div class="row row-standard-padding">
+		<div class="medium-12 columns">
+			<h3><?php the_field( 'title', 174 ); ?></h3>
+			<div class="flex-video widescreen vimeo">
+				<?php the_field( 'video_embed_code', 174 ); ?>
+			</div>
+		</div>
+	</div>
+	<?php if ( is_user_logged_in() ) { ?>
+		<a class="post-edit" href="<?php echo get_edit_post_link( 174, $context ); ?>">Edit this</a>
+	<?php } ?>
+</div>
+
 <!-- Start triple quote block -->
 <div class="testimonial-x-3-block text-center block-alt-color">
 	<div class="row row-standard-padding">
