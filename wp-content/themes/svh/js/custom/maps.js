@@ -1,18 +1,5 @@
 (function($) {
 
-	/*
-	 *  new_map
-	 *
-	 *  This function will render a Google Map onto the selected jQuery element
-	 *
-	 *  @type	function
-	 *  @date	8/11/2013
-	 *  @since	4.3.0
-	 *
-	 *  @param	$el (jQuery element)
-	 *  @return	n/a
-	 */
-
 	function new_map( $el ) {
 
 		// var
@@ -52,20 +39,6 @@
 
 	}
 
-	/*
-	 *  add_marker
-	 *
-	 *  This function will add a marker to the selected Google Map
-	 *
-	 *  @type	function
-	 *  @date	8/11/2013
-	 *  @since	4.3.0
-	 *
-	 *  @param	$marker (jQuery element)
-	 *  @param	map (Google Map object)
-	 *  @return	n/a
-	 */
-
 	function add_marker( $marker, map ) {
 
 		// var
@@ -97,19 +70,6 @@
 		}
 
 	}
-
-	/*
-	 *  center_map
-	 *
-	 *  This function will center the map, showing all markers attached to this map
-	 *
-	 *  @type	function
-	 *  @date	8/11/2013
-	 *  @since	4.3.0
-	 *
-	 *  @param	map (Google Map object)
-	 *  @return	n/a
-	 */
 
 	function center_map( map ) {
 

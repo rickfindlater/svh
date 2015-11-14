@@ -21,7 +21,7 @@ get_header(); ?>
 			//when modal is open we pause the background video and add the html of the full video with autoplay
 			$('#videoModal').on('open.fndtn.reveal', function(e) {
 				BV.getPlayer().pause();
-				$("#videoModal .flex-video").html('<iframe src="https://player.vimeo.com/video/142859791?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+				$("#videoModal .flex-video").html('<iframe src="https://player.vimeo.com/video/142859791" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 			});
 
 			//when modal is open we re start the background video and remove the html of the full video with autoplay
