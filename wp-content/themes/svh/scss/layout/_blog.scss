@@ -1,4 +1,4 @@
-body.blog, body.single-post {
+body.blog, body.single-post, body.search {
 
     .container {
         background-color: $white;
@@ -82,7 +82,7 @@ body.blog, body.single-post {
 
     //The newsletter signup widget
     .widget_mc4wp_widget {
-        margin-top: $blog-widget-gap;
+        margin: $blog-widget-gap 0;
         background-color: $secondary-color-lighter-accent;
         overflow: hidden;
         @include border-radius($global-radius-small);
@@ -262,4 +262,9 @@ body.single-post {
         border-right: 1px solid $vapor;
 
     }
+}
+
+body.search {
+    background-color: $white;
+    padding: $row-double-padding 0;
 }
