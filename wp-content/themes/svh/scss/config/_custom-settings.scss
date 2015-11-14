@@ -97,6 +97,7 @@ $xlarge-breakpoint: 			em-calc(1920);
 
 $row-width:                     rem-calc(1100) !default;
 $row-standard-padding:          60px !default;
+$row-double-padding:			$row-standard-padding * 2;
 $column-gutter:                 rem-calc(30) !default;
 
 // Basic style rules 
