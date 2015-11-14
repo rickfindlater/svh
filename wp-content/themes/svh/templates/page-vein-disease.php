@@ -6,9 +6,8 @@ Description: Only used for the about homepage
 
 get_header(); ?>
 
-	<p>The vein page</p>
-
-	<!--<p>--><?php //the_field( 'background_image'); ?><!--</p>-->
+	<h1 class="entry-title"><?php the_title(); ?></h1>
+	<?php the_content(); ?>
 
 <!-- Start newsletter subscription form -->
 <?php echo do_shortcode( '[mc4wp_form]' ); ?>
