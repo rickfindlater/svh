@@ -42,7 +42,7 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="large-5 medium-6 medium-centered columns">
-				<button class="button large primary radius expand button-opacity hp-hero-primary-button">
+				<button id="scroll-contact-form" class="button large primary radius expand button-opacity hp-hero-primary-button">
 					Book a consultation
 				</button>
 				<button id="video-play-button" data-reveal-id="videoModal" class="button radius secondary display-block margin-top-10px expand">
@@ -138,6 +138,7 @@ get_header(); ?>
 </div>
 
 <!-- Start contact form -->
+	<a id="contact-form-anchor"></a>
 <div class="block-alt-color">
 	<div class="row row-standard-padding">
 		<div class="medium-6 medium-centered columns">

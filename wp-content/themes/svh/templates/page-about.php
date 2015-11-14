@@ -110,13 +110,13 @@ get_header(); ?>
 	</div>
 </div>
 
-<!-- Start triple quote block -->
+<!-- Start learn more about block -->
 <div class="full-width-image-block full-width-image-block-centered-cta" data-parallax="scroll" data-image-src="<?php the_field( 'background_image', 145 ); ?>">
 	<div class="row">
 		<div class="large-10 large-centered columns">
 			<h2><?php the_field( 'header', 145 ); ?></h2>
 			<p class="lead"><?php the_field( 'description', 145 ); ?></p>
-			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 145 ); ?>"><?php the_field( 'button_cta_text', 145 ); ?></a>
+			<a class="button large primary radius extra-side-padding button-opacity" href="/#contact-form-anchor"><?php the_field( 'button_cta_text', 145 ); ?></a>
 			<p class="cta-phone-number"><?php the_field( 'text_cta', 145 ); ?></p>
 		</div>
 	</div>
