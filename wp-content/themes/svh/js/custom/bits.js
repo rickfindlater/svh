@@ -8,11 +8,11 @@ $(document).ready(function(){
 		}, 800);
 	});
 
-
-
-	function fadeHero(){
-		$(".hp-hero-inner").fadeIn();
-	}
-	setTimeout(fadeHero, 1000);
+	//
+	//
+	//function fadeHero(){
+	//	$(".hp-hero-inner").fadeIn();
+	//}
+	//setTimeout(fadeHero, 1000);
 
 });

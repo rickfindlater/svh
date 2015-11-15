@@ -104,7 +104,7 @@ get_header(); ?>
 	<?php } ?>
 </div>
 
-<!--<!-- Start of embeded video block -->-->
+<!--<!-- Start of embeded video block -->
 <!--<div class="block-alt-color text-center">-->
 <!--	<div class="row row-standard-padding">-->
 <!--		<div class="medium-12 columns">-->
