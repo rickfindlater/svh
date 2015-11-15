@@ -8,11 +8,9 @@ $(document).ready(function(){
 		}, 800);
 	});
 
-	//
-	//
-	//function fadeHero(){
-	//	$(".hp-hero-inner").fadeIn();
-	//}
-	//setTimeout(fadeHero, 1000);
+	function fadeHero(){
+		$(".off-canvas-wrap").css('background', 'none');
+	}
+	setTimeout(fadeHero, 500);
 
 });
