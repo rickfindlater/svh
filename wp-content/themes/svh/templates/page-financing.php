@@ -8,7 +8,8 @@ get_header(); ?>
 
 <div class="row row-treatments-page">
 	<div class="medium-10 large-centered columns">
-		<?php the_field( 'main_content', 210); ?>
+		<h1><?php the_title(); ?></h1>
+		<?php the_field( 'main_content'); ?>
 	</div>
 </div>
 
