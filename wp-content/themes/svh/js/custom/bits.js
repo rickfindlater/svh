@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 
 	function fadeHero(){
-		$(".off-canvas-wrap").css('background', 'none');
+		$(".home .off-canvas-wrap").css('background', 'none');
 	}
 	setTimeout(fadeHero, 1000);
 
