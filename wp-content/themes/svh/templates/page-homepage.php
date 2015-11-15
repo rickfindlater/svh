@@ -77,7 +77,7 @@ get_header(); ?>
 						<a href="#" class="uber-link"><?php the_title() ?></a>
 						<img src="<?php the_field('teaser_image'); ?>" alt="Teaser image">
 						<p><?php the_field('teaser_summary'); ?></p>
-						<a class="button secondary outline radius extra-side-padding" href="<?php the_field('learn_more_link'); ?>">Learn more</a>
+						<a class="button secondary outline radius extra-side-padding" href="<?php the_field('teaser_learn_more_link'); ?>">Learn more</a>
 						<!-- custom edit link for posts is user is logged in -->
 						<?php if ( is_user_logged_in() ) { ?>
 							<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>
