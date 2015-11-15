@@ -5,8 +5,11 @@ Description: Only used for the treatments homepage
 */
 
 get_header(); ?>
-
-<?php the_field( 'main_content', 90); ?>
+<div class="row row-treatments-page">
+	<div class="large-10 large-centered columns">
+		<?php the_field( 'main_content', 90); ?>
+	</div>
+</div>
 
 <?php if ( is_user_logged_in() ) { ?>
 	<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>

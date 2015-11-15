@@ -6,7 +6,12 @@ Description: Only used for the about homepage
 
 get_header(); ?>
 
-<?php the_field( 'main_content', 87); ?>
+<div class="row row-treatments-page">
+	<div class="medium-10 large-centered columns">
+		<?php the_field( 'main_content', 87); ?>
+	</div>
+</div>
+
 
 <?php if ( is_user_logged_in() ) { ?>
 	<a class="post-edit" href="<?php echo get_edit_post_link( $id, $context ); ?>">Edit this</a>

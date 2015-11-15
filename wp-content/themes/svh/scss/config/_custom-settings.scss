@@ -168,12 +168,23 @@ $topbar-height:                 rem-calc(80) !default;
 $topbar-link-color:             $anchor-font-color !default;
 $topbar-link-color-hover:       $anchor-font-color !default;
 $topbar-link-font-size:         rem-calc(15) !default;
+$topbar-link-padding: 			($topbar-height / 4) !default;
 
 $topbar-link-bg-active:         $primary-color-lightest-accent;
 $topbar-link-color-active:      $anchor-font-color;
 $topbar-link-bg-active-hover:   $primary-color-lighter-accent;
 
 $topbar-logo-url:				url(../assets/img/svh_main_logo02092015.png);
+
+$topbar-dropdown-bg: 					$primary-color !default;
+$topbar-dropdown-link-color: 			$white !default;
+$topbar-dropdown-link-color-hover: 		$white !default;
+$topbar-dropdown-link-bg: 				$primary-color !default;
+$topbar-dropdown-link-bg-hover: 		$primary-color-light-accent !default;
+//$topbar-dropdown-link-weight: $font-weight-normal !default;
+//$topbar-dropdown-toggle-size: 5px !default;
+//$topbar-dropdown-toggle-color: $white !default;
+//$topbar-dropdown-toggle-alpha: .4 !default;
 
 // Tab bar (mobile nav)
 

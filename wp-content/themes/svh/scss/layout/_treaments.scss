@@ -1,0 +1,29 @@
+.row-treatments-page {
+    padding-top: 20px;
+
+    ul {
+        background-color: $secondary-color-lighter-accent;
+        list-style-type: none;
+        padding: 30px;
+        margin: 0;
+        font-size: 1.1em;
+        @include column-count (2);
+        @include column-rule (1px solid $secondary-color);
+        @include column-gap ($column-gutter * 2);
+
+        @media screen and (max-width: $small-breakpoint) {
+            @include column-count (1);
+        }
+
+        li {
+
+            &:before {
+                font-family: $font-family-icon-font;
+                font-weight: $icon-font-reg-weight;
+                content: "\F014";
+                margin-right: 10px;
+                color: $primary-color;
+            }
+        }
+    }
+}
