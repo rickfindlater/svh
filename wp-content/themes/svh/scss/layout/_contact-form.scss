@@ -31,6 +31,20 @@
         }
     }
 
+    .wpcf7-not-valid-tip {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .wpcf7-validation-errors {
+        border-color: $warning-color;
+        background-color: $warning-color;
+        color: $white;
+        margin: 0;
+        width: 100%;
+        @include border-radius($global-radius);
+    }
+
     .wpcf7-form-control-wrap {
 
         &:before {

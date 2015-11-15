@@ -1,6 +1,16 @@
 .row-treatments-page {
     padding-top: 20px;
 
+    h1 {
+        border-bottom: 1px solid $secondary-color-light-accent;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        margin-top: 40px;
+    }
+
     ul {
         background-color: $secondary-color-lighter-accent;
         list-style-type: none;

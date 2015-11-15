@@ -5,6 +5,12 @@
     width: $topbar-logo-width;
     height: $topbar-logo-height;
     margin: $top-bar-logo-margin;
+
+	@media screen and (max-width: $medium-breakpoint) {
+		width: $topbar-logo-width / 2;
+		height: $topbar-logo-height / 2;
+		margin: 24px 0 24px 24px;
+	}
 }
 
 .top-bar-section ul li>a {
@@ -24,15 +30,17 @@
 // and add top padding to the body cover the top bax being fixed
 body {
 	padding-top: 80px;
+
+	@media screen and (max-width: $medium-breakpoint) {
+		padding-top: 0 !important;
+	}
 }
 
 // but not on the homepage due to large video
 body.home.page {
 	padding-top: 0;
 
-	@media screen and (max-width: $medium-breakpoint) {
-		padding-top: 0 !important;
-	}
+
 }
 
 .tab-bar-section.middle {

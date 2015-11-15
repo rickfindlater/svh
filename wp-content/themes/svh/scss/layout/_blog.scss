@@ -37,6 +37,7 @@ body.blog, body.single-post, body.search {
             &:before {
                 content: "\F002";
                 font-family: $font-family-icon-font;
+                font-weight: $icon-font-reg-weight;
                 position: absolute;
                 color: $muted-color;
                 z-index: 2;

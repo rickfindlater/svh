@@ -3,6 +3,10 @@
 //	margin-bottom: rem-calc(32);
 //}
 
+.top-bar-container {
+  @include box-shadow(0, 2px, 15px, rgba($black,0.075));
+}
+
 .top-bar .name {
 	h1 a { font-weight: 500; }
 }
