@@ -1,0 +1,28 @@
+// -- Custom mobile settings for SVH -- //
+
+.off-canvas-wrap {
+    background: white;
+}
+
+@media screen and (max-width: $topbar-breakpoint){
+    .off-canvas-wrap {
+        background: white !important;
+    }
+}
+
+ul.off-canvas-list {
+    position: relative;
+    z-index: 100000;
+
+    li {
+        position: relative;
+        z-index: 100000;
+        color: red !important;
+
+        a {
+            position: relative;
+            z-index: 100000;
+            color: red !important;
+        }
+    }
+}

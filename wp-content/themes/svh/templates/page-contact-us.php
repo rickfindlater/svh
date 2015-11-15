@@ -128,7 +128,7 @@ if( $map_block->have_posts() ) {
 				<div class="row">
 					<div class="large-4 medium-6 columns">
 						<div class="contact-location-panel">
-							<h5 class="location-title">Location title</h5>
+							<h5 class="location-title"><?php the_title(); ?></h5>
 							<!--start contact details-->
 							<div class="contact-section">
 								<i class="btl bt-map bt-lg text-primary location-panel-icon"></i>

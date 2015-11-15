@@ -7,7 +7,8 @@ Description: Only used for the treatments homepage
 get_header(); ?>
 <div class="row row-treatments-page">
 	<div class="large-10 large-centered columns">
-		<?php the_field( 'main_content', 90); ?>
+		<h1><?php the_title(); ?></h1>
+		<?php the_field( 'main_content'); ?>
 	</div>
 </div>
 
