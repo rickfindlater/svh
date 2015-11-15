@@ -11,6 +11,6 @@ $(document).ready(function(){
 	function fadeHero(){
 		$(".off-canvas-wrap").css('background', 'none');
 	}
-	setTimeout(fadeHero, 500);
+	setTimeout(fadeHero, 1000);
 
 });
