@@ -36,7 +36,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="large-10 large-centered columns">
 				<h1>Specialist Vein Health empowers people to take control of their health.</h1>
-				<p>We provide advanced and minimally invasive techniques at affordable levels.</p>
+				<p class="lead">We provide advanced and minimally invasive techniques at affordable levels.</p>
 			</div>	
 		</div>
 		<div class="row">
