@@ -19,7 +19,9 @@ get_header(); ?>
 <!--begin blog header-->
 <div class="full-width-image-block full-width-image-block-newsletter">
 	<?php the_field( 'header', 160 ); ?>
-	<img src="<?php the_field( 'background_image', 160 ); ?>" />
+
+	<div class="full-width-image-block full-width-image-block-bottom-cta" data-parallax="scroll" data-image-src="<?php the_field( 'background_image', 160 ); ?>">
+
 	<div class="row row-standard-padding">
 		<div class="medium-8 medium-centered columns">
 			<h2>Welcome to our blog</h2>
