@@ -8,6 +8,10 @@
     }
 }
 
+.vjs-control-bar {
+    display: none !important;
+}
+
 #big-video-wrap {
     overflow: hidden;
     position: absolute;
@@ -55,6 +59,18 @@
             width: 100%;
         }
     }
+}
+
+.hp-hero-inner {
+    background-image: url(../assets/img/thumbnail.jpg);
+
+    &.no-bkgrdimg {
+        background-image: none;
+    }
+}
+
+.ie .hp-hero-inner.no-bkgrdimg {
+    background-image: url(../assets/img/thumbnail.jpg) !important;
 }
 
 #contact-form-anchor {

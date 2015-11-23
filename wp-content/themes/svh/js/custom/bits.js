@@ -1,6 +1,11 @@
 // JS Bits and pieces
 
 $(document).ready(function(){
+
+	if (Function('/*@cc_on return document.documentMode===10@*/')()){
+		document.documentElement.className+=' ie';
+	}
+
 	//scroll to contact form on homepage
 	$("#scroll-contact-form").click(function() {
 		$('html, body').animate({
@@ -12,5 +17,4 @@ $(document).ready(function(){
 		$(".home .off-canvas-wrap").css('background', 'none');
 	}
 	setTimeout(fadeHero, 1000);
-
 });
