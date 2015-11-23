@@ -1,28 +1,9 @@
 // -- Custom mobile settings for SVH -- //
 
-.home .off-canvas-wrap {
-    background: #6F907E;
-}
+.off-canvas-wrap {
 
-@media screen and (max-width: $topbar-breakpoint){
-    .off-canvas-wrap {
-        background: #6F907E !important;
-    }
 }
 
 ul.off-canvas-list {
-    position: relative;
-    z-index: 100000;
 
-    li {
-        position: relative;
-        z-index: 100000;
-        color: red !important;
-
-        a {
-            position: relative;
-            z-index: 100000;
-            color: red !important;
-        }
-    }
 }

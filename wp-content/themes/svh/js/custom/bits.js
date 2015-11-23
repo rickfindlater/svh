@@ -17,4 +17,8 @@ $(document).ready(function(){
 		$(".home .off-canvas-wrap").css('background', 'none');
 	}
 	setTimeout(fadeHero, 1000);
+
+	if(WURFL.is_mobile) {
+		$('body').addClass('mobile');
+	}
 });
