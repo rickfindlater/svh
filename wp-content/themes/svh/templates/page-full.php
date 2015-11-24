@@ -27,7 +27,7 @@ get_header(); ?>
 </div>
 
 <!-- Start newsletter subscription form -->
-<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+<?php echo do_shortcode( '[mc4wp_form id="260"]' ); ?>
 <!-- End newsletter subscription form -->
 
 <?php get_footer(); ?>

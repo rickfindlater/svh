@@ -15,7 +15,7 @@ get_header(); ?>
 				<h2>Welcome to our blog</h2>
 			</div>
 			<!-- newsletter subscription form -->
-			<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+			<?php echo do_shortcode( '[mc4wp_form id="260"]' ); ?>
 		</div>
 	</div>
 	<!--end blog header-->
@@ -51,8 +51,8 @@ get_header(); ?>
 		<?php get_sidebar(); ?>
 	</div>
 
-	<!-- Start newsletter subscription form -->
-<?php echo do_shortcode( '[mc4wp_form]' ); ?>
-	<!-- End newsletter subscription form -->
+<!-- Start newsletter subscription form -->
+<?php echo do_shortcode( '[mc4wp_form id="260"]' ); ?>
+<!-- End newsletter subscription form -->
 
 <?php get_footer(); ?>

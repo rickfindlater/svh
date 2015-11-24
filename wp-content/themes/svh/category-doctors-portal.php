@@ -17,7 +17,7 @@ get_header(); ?>
 				<h2>Welcome to the Doctors Portal</h2>
 			</div>
 			<!-- newsletter subscription form -->
-			<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+			<?php echo do_shortcode( '[mc4wp_form id="261"]' ); ?>
 		</div>
 	</div>
 	<!--end blog header-->
@@ -54,7 +54,7 @@ get_header(); ?>
 	</div>
 
 	<!-- Start newsletter subscription form -->
-<?php echo do_shortcode( '[mc4wp_form]' ); ?>
+<?php echo do_shortcode( '[mc4wp_form id="260"]' ); ?>
 	<!-- End newsletter subscription form -->
 
 <?php get_footer(); ?>

@@ -43,8 +43,8 @@ get_header(); ?>
 	</div>	
 </div>
 
-<!-- Start newsletter subscription form -->
-<?php echo do_shortcode( '[mc4wp_form]' ); ?>
-<!-- End newsletter subscription form -->
+	<!-- Start newsletter subscription form -->
+<?php echo do_shortcode( '[mc4wp_form id="260"]' ); ?>
+	<!-- End newsletter subscription form -->
 
 <?php get_footer();?>
