@@ -36,7 +36,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="large-10 large-centered columns">
 				<h1>Specialist Vein Health empowers people to take control of their health.</h1>
-				<p class="lead">We provide advanced and minimally invasive techniques at affordable levels.</p>
+				<p class="lead">With over 25 years of specialist experience in the treatment of varicose veins.</p>
 			</div>	
 		</div>
 		<div class="row">
@@ -165,8 +165,22 @@ get_header(); ?>
 		</div>	
 	</div>
 </div>
-
 <!-- end blog carousel -->
+
+<!-- Start learn more about block -->
+<div class="full-width-image-block full-width-image-block-centered-cta" data-parallax="scroll" data-image-src="<?php the_field( 'background_image', 257 ); ?>">
+	<div class="row">
+		<div class="large-10 large-centered columns">
+			<h2><?php the_field( 'header', 257 ); ?></h2>
+			<p class="lead"><?php the_field( 'description', 257 ); ?></p>
+			<a class="button large primary radius extra-side-padding button-opacity" href="/#contact-form-anchor"><?php the_field( 'button_cta_text', 257 ); ?></a>
+			<p class="cta-phone-number"><?php the_field( 'text_cta', 257 ); ?></p>
+		</div>
+	</div>
+	<?php if ( is_user_logged_in() ) { ?>
+		<a class="post-edit" href="<?php echo get_edit_post_link( 257, $context ); ?>">Edit this</a>
+	<?php } ?>
+</div>
 
 <!-- Start newsletter subscription form -->
 <?php echo do_shortcode( '[mc4wp_form]' ); ?>
