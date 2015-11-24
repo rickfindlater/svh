@@ -162,7 +162,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="medium-12">
 			<?php echo do_shortcode('[carousel-horizontal-posts-content-slider]'); ?>
-		</div>	
+		</div>
 	</div>
 </div>
 <!-- end blog carousel -->
@@ -173,7 +173,7 @@ get_header(); ?>
 		<div class="large-10 large-centered columns">
 			<h2><?php the_field( 'header', 257 ); ?></h2>
 			<p class="lead"><?php the_field( 'description', 257 ); ?></p>
-			<a class="button large primary radius extra-side-padding button-opacity" href="/#contact-form-anchor"><?php the_field( 'button_cta_text', 257 ); ?></a>
+			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_text', 257 ); ?>"></a>
 			<p class="cta-phone-number"><?php the_field( 'text_cta', 257 ); ?></p>
 		</div>
 	</div>
