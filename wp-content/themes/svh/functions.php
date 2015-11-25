@@ -56,6 +56,13 @@ function svh_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'svh_scripts' );
 
+
+function jl_remove_post_dates() {
+	add_filter('the_date', '__return_false');
+	add_filter('the_time', '__return_false');
+	add_filter('the_modified_date', '__return_false');
+} add_action('loop_start', 'jl_remove_post_dates');
+
 //Custom post types
 
 //**** teaser ****
