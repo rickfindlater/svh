@@ -82,7 +82,7 @@ body.category-blog, body.category-doctors-portal, body.single-post, body.search 
     }
 
     //The newsletter signup widget
-    .widget_mc4wp_widget {
+    .widget_mc4wp_form_widget {
         margin: $blog-widget-gap 0;
         background-color: $secondary-color-lighter-accent;
         overflow: hidden;
@@ -268,4 +268,12 @@ body.single-post {
 body.search {
     background-color: $white;
     padding: $row-double-padding 0;
+}
+
+//selectively hide show the right newsletter signup form on the doctors portal vs normal blog
+.category-doctors-portal #mc4wp_form_widget-2 {
+    display: none;
+}
+.category-blog #mc4wp_form_widget-3 {
+    display: none;
 }
