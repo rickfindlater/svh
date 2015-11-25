@@ -46,3 +46,8 @@
         margin-bottom: $about-us-bio-blocks-standard-gap;
     }
 }
+
+// fix about page hero image on mobile screens where parralax dont work
+body.mobile .about-hero {
+    background-position: 50% 0px !important;
+}

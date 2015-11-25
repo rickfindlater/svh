@@ -7,7 +7,7 @@ Description: Only used for the about homepage
 get_header(); ?>
 
 <!-- Start full width image block -->
-<div class="full-width-image-block full-width-image-block-centered-cta" data-parallax="scroll" data-position-y="60px" data-image-src="<?php bloginfo('template_directory');?>/assets/img/svh_about_hero.jpg">
+<div class="full-width-image-block full-width-image-block-centered-cta about-hero" data-parallax="scroll" data-position-y="60px" data-image-src="<?php bloginfo('template_directory');?>/assets/img/svh_about_hero.jpg">
 	<div class="row">
 		<div class="large-8 large-centered columns">
 	    	<h2><?php the_field( 'header', 70 ); ?></h2>

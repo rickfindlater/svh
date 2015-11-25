@@ -44,3 +44,27 @@
 .block-alt-color {
     background-color: $secondary-color-lighter-accent;
 }
+
+// needed to override styles that are killing the top margin to early
+@media screen and (max-width: $medium-breakpoint) {
+    body.page,
+    body.single,
+    body.search,
+    body.mobile {
+        padding-top: $row-standard-padding + 20 !important;
+    }
+    body.home {
+        padding-top: 0 !important;
+    }
+}
+
+// then kill the top margin when the navbar breaks
+@media screen and (max-width: $topbar-breakpoint) {
+    body.page,
+    body.single,
+    body.search,
+    body.mobile {
+        padding-top: 0 !important;
+    }
+}
+
