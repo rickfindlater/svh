@@ -116,7 +116,7 @@ get_header(); ?>
 		<div class="large-10 large-centered columns">
 			<h2><?php the_field( 'header', 145 ); ?></h2>
 			<p class="lead"><?php the_field( 'description', 145 ); ?></p>
-			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_text', 145 ); ?>"></a>
+			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 145 ); ?>"><?php the_field( 'button_cta_text', 145 ); ?></a>
 			<p class="cta-phone-number"><?php the_field( 'text_cta', 145 ); ?></p>
 		</div>
 	</div>

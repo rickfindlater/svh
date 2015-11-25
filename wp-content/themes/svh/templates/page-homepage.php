@@ -173,8 +173,7 @@ get_header(); ?>
 		<div class="large-10 large-centered columns">
 			<h2><?php the_field( 'header', 257 ); ?></h2>
 			<p class="lead"><?php the_field( 'description', 257 ); ?></p>
-			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_text', 257 ); ?>"></a>
-			<p class="cta-phone-number"><?php the_field( 'text_cta', 257 ); ?></p>
+			<a class="button large primary radius extra-side-padding button-opacity" href="<?php the_field( 'button_cta_link', 257 ); ?>"><?php the_field( 'button_cta_text', 257 ); ?></a>
 		</div>
 	</div>
 	<?php if ( is_user_logged_in() ) { ?>
