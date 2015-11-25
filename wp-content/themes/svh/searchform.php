@@ -13,6 +13,9 @@ do_action( 'foundationpress_before_searchform' ); ?>
 		<?php do_action( 'foundationpress_searchform_top' ); ?>
 		<div class="small-8 columns">
 			<input type="text" value="" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'foundationpress' ); ?>">
+			<input type="hidden" name="post_type[]" value="post_type_post" />
+			<input type="hidden" name="post_type[]" value="post_type_post" />
+
 		</div>
 		<?php do_action( 'foundationpress_searchform_before_search_button' ); ?>
 		<div class="small-4 columns">

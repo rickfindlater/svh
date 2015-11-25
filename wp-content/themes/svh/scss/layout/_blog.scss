@@ -269,3 +269,8 @@ body.search {
 .category-blog #mc4wp_form_widget-3 {
     display: none;
 }
+.search-results #mc4wp_form_widget-2,
+.search-results #mc4wp_form_widget-3,
+.single-post #mc4wp_form_widget-3 {
+    display: none;
+}
