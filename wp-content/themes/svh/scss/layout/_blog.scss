@@ -261,16 +261,3 @@ body.search {
     background-color: $white;
     padding: $row-double-padding 0;
 }
-
-//selectively hide show the right newsletter signup form on the doctors portal vs normal blog
-.category-doctors-portal #mc4wp_form_widget-2 {
-    display: none;
-}
-.category-blog #mc4wp_form_widget-3 {
-    display: none;
-}
-.search-results #mc4wp_form_widget-2,
-.search-results #mc4wp_form_widget-3,
-.single-post #mc4wp_form_widget-3 {
-    display: none;
-}
