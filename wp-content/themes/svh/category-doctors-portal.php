@@ -14,7 +14,7 @@ get_header(); ?>
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/svh_blog_hero1.jpg" />
 		<div class="row row-standard-padding">
 			<div class="medium-8 medium-centered columns">
-				<h2>Welcome to the Doctors Portal</h2>
+				<h2>The Latest in Vascular Health and Patient Care</h2>
 			</div>
 			<!-- newsletter subscription form -->
 			<?php echo do_shortcode( '[mc4wp_form id="261"]' ); ?>
