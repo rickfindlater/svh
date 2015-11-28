@@ -22,7 +22,7 @@
 		<!-- The post excerpt -->
 		<?php the_excerpt(); ?>
 		<!-- Read more button -->
-		<a class="button small secondary outline radius read-more" href="<?php the_permalink(); ?>">Read More.</a>
+		<a class="button small secondary outline radius read-more" href="<?php the_permalink(); ?>">Read More</a>
 	</div>
 	<footer>
 		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
