@@ -27,12 +27,16 @@
         }
 
         li {
+            padding-left: 30px;
+            position: relative;
 
             &:before {
                 font-family: $font-family-icon-font;
                 font-weight: $icon-font-reg-weight;
                 content: "\F014";
                 margin-right: 10px;
+                position: absolute;
+                left: 0;
                 color: $primary-color;
             }
         }

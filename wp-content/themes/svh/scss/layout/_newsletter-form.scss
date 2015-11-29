@@ -49,3 +49,22 @@ body .mc4wp-form {
         color:    $footer-newsletter-placeholder-color;
     }
 }
+
+.mc4wp-response {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: $footer-bg-color-dark;
+}
+
+.mc4wp-form-basic .mc4wp-success, .mc4wp-form-theme .mc4wp-success {
+    color: white;
+}
+
+.mc4wp-form-basic .mc4wp-alert, .mc4wp-form-theme .mc4wp-alert {
+    color: $alert-color;
+}
