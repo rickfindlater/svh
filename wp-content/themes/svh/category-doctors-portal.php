@@ -11,7 +11,7 @@ get_header(); ?>
 <!--	<div class="full-width-image-block full-width-image-block-newsletter" data-parallax="scroll" data-image-src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/img/svh_blog_hero1.jpg">-->
 
 	<!-- This is the blog hero unit background image -->
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/svh_blog_hero1.jpg" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/svh_dctr_port_head.jpg" />
 		<div class="row row-standard-padding">
 			<div class="medium-8 medium-centered columns">
 				<h2>The Latest in Vascular Health and Patient Care</h2>
