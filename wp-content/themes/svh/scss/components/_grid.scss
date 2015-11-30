@@ -1,6 +1,9 @@
 /// --- Grid and positioning stuff --- ///
 
-
+body.home.page,
+body.page-template-page-about {
+    z-index: 1;
+}
 
 .row {
 
