@@ -45,6 +45,10 @@
         @include border-radius($global-radius);
     }
 
+    .wpcf7-response-output {
+        margin-top: 50px;
+    }
+
     .wpcf7-form-control-wrap {
 
         &:before {
@@ -86,4 +90,11 @@
             }
         }
     }
+}
+
+//mailchimp form
+
+.mc4wp-alert,
+.mc4wp-alert p {
+    color: white;
 }
