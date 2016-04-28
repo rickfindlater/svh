@@ -52,6 +52,7 @@
     .hp-hero-primary-button {
         display: block;
         margin: 30px auto 0;
+        font-size: 17px;
     }
 
     .button {
@@ -68,6 +69,7 @@
         background-image: none;
     }
 }
+
 
 .ie .hp-hero-inner.no-bkgrdimg {
     background-image: url(../assets/img/thumbnail.jpg) !important;

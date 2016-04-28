@@ -41,13 +41,13 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="large-5 medium-6 medium-centered columns">
-				<button id="scroll-contact-form" class="button large primary radius expand button-opacity hp-hero-primary-button">
-					Book a consultation
-				</button>
+				<a id="scroll-contact-form" class="button large primary radius expand button-opacity hp-hero-primary-button" href="http://svh.co.nz/win-a-travel-voucher-from-svh/">
+					Book a consultation/enter the draw
+				</a>
 				<button id="video-play-button" data-reveal-id="videoModal" class="button radius secondary display-block margin-top-10px expand">
 					Or watch the video
 				</button>
-			</div>	
+			</div>
 		</div>
 	</div>
 	<div id="videoModal" class="reveal-modal large" data-reveal="svhVideo" aria-hidden="true" style="opacity: 1; visibility: hidden; display: none;">
